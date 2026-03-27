@@ -2,49 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:52509/general/</loc>
+    <loc>//localhost:60871/general/</loc>
     <lastmod>2018-12-29T11:02:05+06:00</lastmod>
   </url><url>
-    <loc>//localhost:52509/general/components/</loc>
+    <loc>//localhost:60871/general/components/</loc>
   </url><url>
-    <loc>//localhost:52509/data-preparation/format/</loc>
+    <loc>//localhost:60871/data-preparation/format/</loc>
   </url><url>
-    <loc>//localhost:52509/databases/mbi/</loc>
+    <loc>//localhost:60871/databases/mbi/</loc>
   </url><url>
-    <loc>//localhost:52509/r-packages/r-packages/</loc>
+    <loc>//localhost:60871/r-packages/r-packages/</loc>
   </url><url>
-    <loc>//localhost:52509/databases/</loc>
+    <loc>//localhost:60871/databases/</loc>
     <lastmod>2018-12-29T11:02:05+06:00</lastmod>
   </url><url>
-    <loc>//localhost:52509/r-packages/api/</loc>
+    <loc>//localhost:60871/r-packages/api/</loc>
   </url><url>
-    <loc>//localhost:52509/general/contribute/</loc>
+    <loc>//localhost:60871/general/contribute/</loc>
   </url><url>
-    <loc>//localhost:52509/data-preparation/metadata/</loc>
+    <loc>//localhost:60871/data-preparation/metadata/</loc>
   </url><url>
-    <loc>//localhost:52509/data-preparation/</loc>
+    <loc>//localhost:60871/data-preparation/</loc>
     <lastmod>2018-12-29T11:02:05+06:00</lastmod>
   </url><url>
-    <loc>//localhost:52509/data-preparation/upload/</loc>
+    <loc>//localhost:60871/data-preparation/upload/</loc>
   </url><url>
-    <loc>//localhost:52509/release/</loc>
+    <loc>//localhost:60871/release/</loc>
     <lastmod>2018-12-29T11:02:05+06:00</lastmod>
   </url><url>
-    <loc>//localhost:52509/r-packages/</loc>
+    <loc>//localhost:60871/r-packages/</loc>
     <lastmod>2018-12-28T11:02:05+06:00</lastmod>
   </url><url>
-    <loc>//localhost:52509/meta-analysis-tool/</loc>
+    <loc>//localhost:60871/meta-analysis-tool/</loc>
     <lastmod>2018-12-28T11:02:05+06:00</lastmod>
   </url><url>
-    <loc>//localhost:52509/</loc>
+    <loc>//localhost:60871/</loc>
     <lastmod>2018-12-29T11:02:05+06:00</lastmod>
   </url><url>
-    <loc>//localhost:52509/admin/</loc>
+    <loc>//localhost:60871/admin/</loc>
   </url><url>
-    <loc>//localhost:52509/categories/</loc>
+    <loc>//localhost:60871/categories/</loc>
   </url><url>
-    <loc>//localhost:52509/databases/mbi/adm-ipd-v1.0-0/</loc>
+    <loc>//localhost:60871/databases/mbi/adm-ipd-v1.0-0/</loc>
   </url><url>
-    <loc>//localhost:52509/tags/</loc>
+    <loc>//localhost:60871/tags/</loc>
   </url>
 </urlset>

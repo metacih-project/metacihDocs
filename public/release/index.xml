@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Data Release on The MetaCIH documentation</title>
-    <link>//localhost:52509/release/</link>
+    <link>//localhost:60871/release/</link>
     <description>Recent content in Data Release on The MetaCIH documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; &lt;script&gt;document.write(new Date().getFullYear())&lt;/script&gt; MetaCIH Collaboration</copyright>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="//localhost:52509/release/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:60871/release/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
