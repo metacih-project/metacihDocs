@@ -1,0 +1,68 @@
+<span id="references-box">
+  <button
+    type="button"
+    class="btn btn-default dropdown-toggle expand-btn"
+    data-toggle="collapse"
+    href="#collapseReferences"
+    role="button"
+    aria-expanded="false"
+  >
+    Show References<span class="caret"></span>
+  </button>
+  <div class="collapse" id="collapseReferences">
+    <div class="card card-body">
+      <span id="ph-references"></span>
+      <span id="spinner-ph-references" class="loader-spinner" style="margin-left: 5px;"></span>
+      <style>
+        #spinner-ph-references { width: 20px; height: 20px; margin-bottom: 5px; padding-bottom: 5px; border: 2px solid rgb(133, 133, 133);
+          border-bottom-color: transparent; border-radius: 50%; display: inline-block;
+          box-sizing: border-box; animation: rotation 1s linear infinite;}
+          @keyframes rotation {0% {transform: rotate(0deg);} 100% {transform: rotate(360deg);}} 
+      </style>
+    </div>
+  </div>
+  <br />
+</span>
+
+<script defer>
+var randID = makeid(10);
+
+async function renderReferences() {
+  // Wait for data to be loaded
+  while (!isDataSaved()) {
+    await new Promise(resolve => setTimeout(resolve, 1000));
+  }
+
+  const conceptDOI = "{{.Get `doi`}}";
+  
+  try {
+    const references = await getMetadataFile(conceptDOI, "metadata/references.json");
+    // If it's already parsed (from JSON), use it; otherwise parse it
+    const referencesObj = typeof references === 'object' ? references : JSON.parse(references);
+    
+    const keys = Object.keys(referencesObj);
+    let html = " <div style='background-color: var(--body-color); padding: 20px 20px 20px 20px;overflow-y: scroll; height:300px;'><ul style='font-size: 90% !important;'>";
+    
+    for (let i = 0; i < keys.length; i++) {
+      html += "<li><strong>" + String(keys[i]) + ":</strong> " + String(referencesObj[keys[i]]) + "</li>";
+    }
+    html += "</ul></div>";
+    
+    // Hide spinner
+    document.getElementById("spinner-ph-references").style.display = "none";
+    
+    // Update content
+    const div = document.getElementById("ph-references");
+    div.id = randID;
+    div.innerHTML = html;
+  } catch (error) {
+    console.error("Error loading references:", error);
+    document.getElementById("spinner-ph-references").style.display = "none";
+    const div = document.getElementById("ph-references");
+    div.id = randID;
+    div.innerHTML = "<em>Error loading references</em>";
+  }
+}
+
+renderReferences();
+</script>

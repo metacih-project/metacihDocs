@@ -1,0 +1,123 @@
+{{ define "main" }}
+
+<div class="landing-intro">
+  {{ if .Content }}
+    <section class="section text-center pb-0">
+      <div class="container">
+        {{ .Content }}
+      </div>
+    </section>
+  {{ end }}
+</div>
+
+<!-- clear divider between intro text and SVG/cards -->
+<div class="landing-cards-separator" aria-hidden="true"></div>
+
+<div class="landing-cards">
+  <!-- topics -->
+  <section class="section" id="topics">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h2 class="section-title">{{ i18n "topics_title" | markdownify }}</h2>
+        </div>
+        <!-- topic-item -->
+        {{ range (where (where .Site.Pages "Type" "docs") "Params.exclude_topic" "ne" true) }}
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <a href="{{ .Permalink }}" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+              {{ with .Params.icon}}
+                <i class="{{.}} icon text-primary d-block mb-4"></i>
+              {{end}}
+              <h3 class="mb-3 mt-0">{{ .Title }}</h3>
+              {{with .Params.description}}
+                <p class="mb-0">{{. | markdownify}}</p>
+              {{end}}
+            </a>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  <!-- /topics -->
+</div>
+
+<div class="landing-bottom">
+  <!-- full-width divider -->
+  <div class="container-fluid px-0">
+    <hr class="m-0" />
+  </div>
+  <!-- /full-width divider -->
+
+  <!-- about -->
+  <section class="section" id="about-metacih">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h2 class="section-title about-metacih-title">About MetaCIH</h2>
+        </div>
+        <div class="col-12 col-lg-10">
+          <h3 class="about-metacih-inline-title mb-4">About MetaCIH</h3>
+          <p>
+            <a href="https://sites.brown.edu/mheal/metacih/">MetaCIH</a> is a research project led by Prof.
+            <a href="https://vivo.brown.edu/display/ssun33">Shufang Sun</a>, Prof.
+            <a href="https://counselingpsych.education.wisc.edu/fac-staff/goldberg-simon/">Simon Goldberg</a>, and Prof.
+            <a href="https://vivo.brown.edu/display/eloucks">Eric Loucks</a> at Brown University and the University of
+            Wisconsin-Madison, funded by the 
+            <a href="https://www.nccih.nih.gov/">National Center for Complementary and Integrative Health</a> of the National
+            Institutes of Health (NIH NCCIH; Project number:
+            <a href="https://reporter.nih.gov/search/yTDxli1e7USBJzyRXpYPkw/project-details/10917638"
+              >1R24AT012845-01</a
+            >).
+          </p>
+
+          <p>
+            The overarching goal of the MetaCIH initiative is to provide <strong>access to meta-analytic databases of clinical trials</strong>
+            investigating the effect of <strong>complementary and integrative health (CIH) interventions</strong> (e.g.,
+            mindfulness, yoga, tai chi, acupuncture, and chiropractic care) on <strong>various outcome areas</strong> (e.g., pain,
+            psychiatric symptoms).
+          </p>
+
+          <p class="mb-2">More specific goals of MetaCIH are to:</p>
+          <ul class="about-metacih-goals mb-0">
+            <li>
+              <i class="bi bi-stack" aria-hidden="true"></i> curate a <strong>living data repository</strong> to drive high-quality evidence synthesis to advance the science of CIH research,
+            </li>
+            <li>
+              <i class="bi bi-book" aria-hidden="true"></i> foster <strong>resource sharing, collaboration,</strong> and <strong>knowledge exchange</strong> on both content and methodologies for evidence synthesis of CIH interventions,
+            </li>
+            <li>
+              <i class="bi bi-globe" aria-hidden="true"></i> support <strong>knowledge translation</strong> from evidence synthesis to real-world impact via evidence informed policy making.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /about -->
+
+  {{ if .Site.Params.cta.enable }}
+    {{ with .Site.Params.cta }}
+      <!-- call to action -->
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="section px-3 bg-white shadow text-center">
+                <h2 class="mb-4">{{ .title | markdownify }}</h2>
+                <p class="mb-4">{{ .content | markdownify }}</p>
+                {{ if .button.enable }}
+                  {{ with .button }}
+                    <a href="{{ .link | relLangURL }}" class="btn btn-primary">{{ .label }}</a>
+                  {{ end }}
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /call to action -->
+    {{ end }}
+  {{ end }}
+
+</div>
+{{ end }}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mindfulness-based interventions for psychiatric disorders on The MetaCIH documentation</title>
+    <link>//localhost:52509/databases/mbi/</link>
+    <description>Recent content in Mindfulness-based interventions for psychiatric disorders on The MetaCIH documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; &lt;script&gt;document.write(new Date().getFullYear())&lt;/script&gt; MetaCIH Collaboration</copyright>
+    <atom:link href="//localhost:52509/databases/mbi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>References of studies excluded based on full-text screening</title>
+      <link>//localhost:52509/databases/mbi/adm-ipd-v1.0-0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:52509/databases/mbi/adm-ipd-v1.0-0/</guid>
+      <description> 📄 Manuscript/Project: &amp;ldquo;Modifiers in Effects of Combined Pharmacotherapy and Psychotherapy versus Pharmacotherapy Alone for Adult Depression: An Individual Participant Data Meta-Analysis&amp;rdquo;. ⏰ Upload Date (Version): 2025-07-10, 1.0-0 🔍 Search Range: 2024-09-01 Exclusions at full-text screening from the MetaCIH Depression database&#xD;Download (JSON)&#xD;Exclusions at full-text screening for the meta-analysis&#xD;Download (JSON)&#xD;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,84 @@
+<!-- details page -->
+<section class="single section-sm pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar">
+          <a
+            class="home-btn"
+            href="{{ .Site.BaseURL | relLangURL }}"
+            aria-label="Home"
+          >
+            <i class="bi bi-house-door" aria-hidden="true"></i>
+          </a>
+          <ul class="list-styled">
+            {{ $currentNode := . }} {{ range .Site.Home.Sections.ByWeight }}
+            {{ template "section-tree-nav" dict "sect" . "currentnode"
+            $currentNode }} {{ end }} {{ if .Content }} {{ if
+            eq .Params.downloadBtn "true"
+            }} 
+            <div>
+              <button class="btn btn-primary btn-block" id="generatePDF">
+                Get Pdf
+              </button>
+            </div>
+            {{ end }} {{ end }}
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-lg-5 p-4 bg-white" id="content">
+          <h2 class="mb-5" id="title">{{ .Title }}</h2>
+          {{ if .Content }}
+          <div class="content">{{.Content}}</div>
+          {{ else }}
+          <div class="bg-light p-4">
+            <ul class="page-list">
+              {{ template "section-tree-nav" dict "sect" . "currentnode"
+              $currentNode }}
+            </ul>
+          </div>
+          {{ end }}
+          <p class="post-meta border-bottom pb-3 mb-0 mt-3">
+            Updated on {{ .Lastmod.Format "02 Jan 2006" }}
+          </p>
+          <nav class="pagination mt-3">
+            <a class="nav nav-top" href="#top" aria-label="Move to top">
+              <i class="bi bi-arrow-up" aria-hidden="true"></i>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /details page -->
+
+<!-- templates -->
+{{ define "section-tree-nav" }} {{ $showvisitedlinks := .showvisitedlinks }} {{
+$currentNode := .currentnode }} {{with .sect}} {{safeHTML .Params.head}} {{
+$isCurrentBranch := hasPrefix $currentNode.Permalink .Permalink }}
+{{
+$fileUniqueID := "" }} {{ with .File }}{{ $fileUniqueID = .UniqueID }}{{ end }}
+{{ $currentNodeFileUniqueID := "" }} {{ with $currentNode.File }}{{
+$currentNodeFileUniqueID = .UniqueID }}{{ end }}
+<li
+  data-nav-id="{{.Permalink}}"
+  title="{{.Title}}"
+  class="sidelist
+  {{if eq $fileUniqueID $currentNodeFileUniqueID}}active{{end}}"
+>
+  <a href="{{.Permalink}}">
+    {{safeHTML .Params.Pre}}{{or .Params.menuTitle .LinkTitle .Title}}{{safeHTML
+    .Params.Post}}
+  </a>
+  {{ $numberOfPages := (add (len .Pages) (len .Sections)) }} {{ if ne
+  $numberOfPages 0 }} {{ if $isCurrentBranch }}
+  <ul>
+    {{ range .Pages.ByWeight }} {{ if and .Params.hidden (not $.showhidden) }}
+    {{else}} {{ template "section-tree-nav" dict "sect" . "currentnode"
+    $currentNode }} {{end}} {{end}}
+  </ul>
+  {{ end }} {{ end }}
+</li>
+{{ end }} {{ end }}

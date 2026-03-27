@@ -1,0 +1,1959 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.theme-light {
+    --primary-color: #313f45 !important;
+    --body-color: #f9f9f9 !important;
+    --text-color: #636363 !important;
+    --text-color-dark: #242738 !important;
+    --white-color: #ffffff !important;
+    --light-color: #f8f9fa !important;
+    --code-bg-color: #f6f6f6 !important;
+    --color-table: #f8f8f8 !important;
+    --hr-color: rgba(0,0,0,.1) !important;
+    --header-color: rgba(94, 186, 189, 1) !important;
+    --col-shadow-1: rgba(12, 13, 14, 0.1) !important;
+    --col-shadow-2: rgba(255, 255, 255, 0.1) !important;
+    --bg-image: url("/images/banner-abstract2.png");
+    --bs-dark2: #313f45;
+    --bs-primary: #00856f;
+    --bs-secondary: #6c757d;
+    --bs-info: rgba(94, 186, 189, 1);
+    --bs-gradient2: linear-gradient(90deg, rgba(94, 186, 189, 1), rgba(3, 114, 183, 1));
+    --color-tip: #e0f2ef !important;
+    --color-tip-above: var(--dgps-boreal);
+    --dgps-boreal-dark: #196759;
+    --dgps-boreal: #00856f;
+}
+
+.theme-dark {
+    --primary-color: var(--dgps-boreal) !important;
+    --body-color: #313f45 !important;
+    --text-color: #ffffff !important;
+    --text-color-dark: #f8f9fa !important;
+    --white-color: #222d32 !important;
+    --light-color: #222d32 !important;
+    --code-bg-color: #313f45 !important;
+    --hr-color: rgba(255, 255, 255, 0.1) !important;
+    --color-table: #313f45 !important;
+    --header-color: var(--dgps-boreal-dark) !important;
+    --bg-image: url("/images/banner-abstract2.png");
+    --col-shadow-1: rgba(12, 13, 14, 0.1) !important;
+    --col-shadow-2: rgba(255, 255, 255, 0.1) !important;
+    --bs-dark2: #313f45;
+    --bs-primary: var(--dgps-boreal);
+    --bs-secondary: #6c757d;
+    --bs-info: var(--dgps-boreal);
+    --bs-gradient2: linear-gradient(90deg, var(--dgps-boreal), var(--dgps-boreal-dark));
+    --color-tip: #1a3530 !important;
+    --color-tip-above: var(--dgps-boreal);
+    --dgps-boreal-dark: #196759;
+    --dgps-boreal: #00856f;
+}
+
+
+body {
+  font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji", serif !important;
+}
+
+
+/* Override theme heading colors - must be very specific */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+section h1, section h2, section h3, section h4, section h5, section h6,
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6,
+.container h1, .container h2, .container h3, .container h4, .container h5, .container h6 {
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji", serif !important;
+    color: var(--dgps-boreal) !important;
+}
+
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover,
+.h1:hover, .h2:hover, .h3:hover, .h4:hover, .h5:hover, .h6:hover,
+section h1:hover, section h2:hover, section h3:hover, section h4:hover, section h5:hover, section h6:hover,
+#content h1:hover, #content h2:hover, #content h3:hover, #content h4:hover, #content h5:hover, #content h6:hover {
+    color: var(--dgps-boreal-dark) !important;
+}
+
+.text-white.mb-3{
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.text-white.mb-4 {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Banner title and subtitle - pale white */
+header.banner h1.text-white.mb-3,
+header.banner .text-white.mb-3,
+header.banner h1,
+header.banner p.text-white.mb-4,
+header.banner .text-white.mb-4,
+header.banner p {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Prominenter Header: The MetaCIH Documentation + weitere Infos */
+.banner-hero .banner-title-block {
+    margin-bottom: 2.75rem; /* Titel + eine Leerzeile darunter */
+}
+.banner-hero .banner-title {
+    font-size: 3rem !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.02em !important;
+    line-height: 1.2 !important;
+    color: #ffffff !important;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+.banner-hero .banner-subtitle {
+    font-size: 1.15rem !important;
+    opacity: 0.95 !important;
+    color: rgba(255,255,255,0.95) !important;
+}
+.banner-hero .banner-tagline {
+    font-size: 0.95rem !important;
+    opacity: 0.9 !important;
+    color: rgba(255,255,255,0.9) !important;
+    font-weight: 500 !important;
+}
+@media (min-width: 768px) {
+    .banner-hero .banner-title {
+        font-size: 3.5rem !important;
+    }
+    .banner-hero .banner-subtitle {
+        font-size: 1.25rem !important;
+    }
+}
+
+#title {
+    color: var(--dgps-boreal) !important;
+}
+
+.section-title {
+    color: var(--dgps-boreal) !important;
+    display: none;
+}
+
+p {
+    font-size: 18px !important;
+}
+
+ul {
+    font-size: 18px !important;
+    text-align: left !important;
+}
+
+.navbar-brand {
+    font-family: "Lexend Tera" !important;
+}
+
+.bi-github {
+    font-size: 25px;
+}
+
+.bi-github:hover {
+    color: var(--dgps-boreal-dark) !important;
+}
+
+#gh-logo {
+    margin-top: -10px !important;
+}
+
+#gh-logo.nav-item:hover {
+    color: var(--dgps-boreal-dark) !important;
+}
+
+ul .nav-item gh-logo-container.nav-item:hover {
+    color: var(--dgps-boreal-dark) !important;
+}
+
+.nav-item:hover {
+    color: var(--dgps-boreal-dark) !important;
+}
+
+.nav-link.text-dark:hover {
+    color: var(--dgps-boreal-dark) !important;
+}
+
+.d-md-block {
+    color: var(--dgps-boreal) !important;
+    transition: .2s ease;
+}
+
+.d-md-block:hover {
+    color: var(--dgps-boreal-dark) !important;
+    transition: .2s ease;
+}
+
+div#content a:link {
+    color: var(--dgps-boreal) !important;
+}
+
+/* Navigation arrows - boreal green */
+a.nav-next,
+a.nav-prev {
+    color: var(--dgps-boreal) !important;
+}
+
+a.nav-next i,
+a.nav-prev i,
+.ti-arrow-left,
+.ti-arrow-right {
+    color: var(--dgps-boreal) !important;
+}
+
+a.nav-next:hover,
+a.nav-prev:hover {
+    color: var(--dgps-boreal-dark) !important;
+}
+
+a.nav-next:hover>i,
+a.nav-prev:hover>i,
+a.nav-next:hover .ti-arrow-left,
+a.nav-next:hover .ti-arrow-right,
+a.nav-prev:hover .ti-arrow-left,
+a.nav-prev:hover .ti-arrow-right {
+    color: var(--dgps-boreal-dark) !important;
+}
+
+.dropdown-menu>a {
+    color: var(--dgps-boreal) !important;
+}
+
+.dropdown-item:hover {
+    color: var(--dgps-boreal-dark) !important;
+}
+
+a {
+    color: var(--dgps-boreal) !important;
+}
+
+a.navbar-brand {
+    color: var(--text-color-dark) !important;
+}
+
+/* Only top-level section headers in sidebar - green */
+/* Target direct children of .list-styled (main sections like "Data Preparation") */
+.list-styled > li.sidelist > a,
+.sidebar .list-styled > li.sidelist > a {
+    color: var(--dgps-boreal) !important;
+}
+
+.list-styled > li.sidelist > a:hover,
+.sidebar .list-styled > li.sidelist > a:hover {
+    color: var(--dgps-boreal-dark) !important;
+}
+
+/* Sub-items in sidebar - keep original color (not green) */
+/* Target nested items inside ul (sub-items like "Format", "Metadata", "Upload") */
+li.sidelist ul li.sidelist > a,
+.sidelist ul li.sidelist > a,
+.sidelist li.sidelist > a,
+.sidelist li a,
+li.sidelist li a,
+.list-styled li.sidelist ul li.sidelist > a,
+.sidebar li.sidelist ul li.sidelist > a {
+    color: var(--text-color-dark) !important;
+}
+
+li.sidelist ul li.sidelist > a:hover,
+.sidelist ul li.sidelist > a:hover,
+.sidelist li.sidelist > a:hover,
+.sidelist li a:hover,
+li.sidelist li a:hover,
+.list-styled li.sidelist ul li.sidelist > a:hover,
+.sidebar li.sidelist ul li.sidelist > a:hover {
+    color: var(--text-color-dark) !important;
+}
+
+div#content a:hover {
+    color: var(--dgps-boreal-dark) !important;
+}
+
+.nav-item.active {
+    background-color: #f9f9f9 !important;
+}
+
+/* Sidebar positioning - removed old top value, now handled by sticky positioning */
+
+button:hover {
+    background-color: var(--dgps-boreal) !important;
+}
+
+ul {
+    margin-bottom: 0px !important;
+}
+
+div.gallery {
+    display: inline-block;
+}
+
+div.logo-gallery {
+    margin-left: 20px;
+    margin-right: 20px;
+    border: none;
+    float: left;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    justify-content: center;
+    position: relative;
+}
+  
+div.logo-gallery img {
+    width: 100%;
+    height: auto;
+    margin: 15px;
+    justify-content: center;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+i.ti-home:hover{
+    color: var(--dgps-boreal-dark) !important;
+}
+
+a.nav-link:hover > i {
+    color: var(--dgps-boreal-dark) !important;
+}
+
+li.nav-item:hover > i {
+    color: var(--dgps-boreal-dark) !important;
+}
+
+code {
+    color: unset !important;
+    font-size: 87% !important;
+    background-color: var(--code-bg-color);
+    border-radius: 0.25rem;
+    padding: 0.125rem 0.25rem;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid var(--hr-color) !important;
+}
+
+tbody {
+    background-color: var(--color-table) !important;
+}
+
+.ti-search{
+    color: var(--bs-secondary) !important;
+}
+
+header.banner.overlay.bg-cover {
+    background-image: none !important;
+    background-color: rgba(0, 0, 0, 1) !important;
+    color: black !important;
+    position: relative;
+    overflow: hidden;
+}
+
+/* head-metacih.svg als Hintergrundbild */
+header.banner.overlay.bg-cover::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("/illustrations/head-metacih.svg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    z-index: 0;
+}
+/* Grüner Schleier in boreal-dark über head-metacih */
+header.banner.overlay.bg-cover::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--dgps-boreal-dark) !important;
+    opacity: 0.88 !important;
+    z-index: 1;
+}
+
+header.banner.overlay.bg-cover > * {
+    position: relative;
+    z-index: 2;
+}
+/* Navbar über Suchleiste/Banner, damit Dropdown sichtbar bleibt */
+header.banner .navbar {
+    z-index: 10 !important;
+}
+
+/* Hintergrundbild füllt die ganze Landing-Page (volle Viewport-Höhe) */
+header.banner.overlay.bg-cover {
+    min-height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+}
+header.banner.overlay.bg-cover::after {
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+/* ========== Landing-Page: Bild unter allem (Hero + Intro + Karten) ========== */
+.landing-page {
+    position: relative;
+    min-height: 100vh;
+    /* Keep lower landing area green */
+    background: var(--dgps-boreal) !important;
+}
+
+body.landing-page {
+    background: var(--dgps-boreal) !important;
+}
+/* Landing-Hintergrund: Boreal linear gradient */
+.landing-page::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        180deg,
+        var(--dgps-boreal-dark) 0%,
+        var(--dgps-boreal) 45%,
+        #00997a 80%,
+        #00b894 100%
+    ) !important;
+    z-index: -2 !important;
+    display: block !important;
+}
+
+/* New: keep landing background out of the white sections below */
+.landing-page::before {
+    display: none !important;
+}
+
+/* Intro block: solid boreal background (no image) */
+.landing-intro {
+    background: var(--dgps-boreal) !important;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+/* Separator above cards: full-width, solid boreal */
+.landing-cards-separator {
+    display: none !important;
+}
+
+/* Cards block: background image limited to card area */
+.landing-cards {
+    position: relative;
+    z-index: 0;
+    /* Match uncovered edge to the sand tone on SVG right side */
+    background: #fffaeb !important;
+    overflow: hidden;
+}
+.landing-cards::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("/illustrations/head-metacih.svg") !important;
+    /* Zoom out further to show more of the full head */
+    background-size: 49% auto !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    z-index: -2;
+}
+.landing-cards::after {
+    /* Only brighten the RIGHT side to the same sand tone (left stays untouched) */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 250, 235, 0) 0%,
+        rgba(255, 250, 235, 0) 62%,
+        rgba(255, 250, 235, 1) 72%,
+        rgba(255, 250, 235, 1) 100%
+    ) !important;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Landing page: everything below cards is white */
+.landing-bottom {
+    background: var(--dgps-boreal) !important;
+}
+.landing-bottom .section-title,
+.landing-bottom,
+.landing-bottom p {
+    color: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* Landing: About MetaCIH – bigger title + icon bullets */
+#about-metacih .about-metacih-title {
+    font-size: 2.25rem !important;
+    line-height: 1.15 !important;
+    margin-bottom: 1rem !important;
+}
+#about-metacih .about-metacih-inline-title {
+    font-size: 1.6rem !important;
+    line-height: 1.2 !important;
+    margin-top: 0.25rem !important;
+    text-align: center !important;
+}
+#about-metacih,
+#about-metacih * {
+    color: rgba(255, 255, 255, 0.95) !important;
+}
+#about-metacih a {
+    text-decoration: none !important;
+    font-weight: 700 !important;
+}
+#about-metacih a:hover,
+#about-metacih a:focus {
+    color: #dcebe7 !important;
+}
+
+/* Landing: About MetaCIH – justified body text */
+#about-metacih p,
+#about-metacih li {
+    text-align: justify !important;
+    text-justify: inter-word;
+}
+#about-metacih .about-metacih-goals {
+    list-style: none;
+    padding-left: 0;
+}
+#about-metacih .about-metacih-goals li {
+    margin-bottom: 1rem;
+    line-height: 1.55;
+}
+#about-metacih .about-metacih-goals li i.bi {
+    font-size: 1.05rem;
+    margin-right: 0.55rem;
+    vertical-align: -0.12em;
+    opacity: 0.95;
+}
+
+/* Make the horizontal divider invisible */
+.landing-page hr {
+    border-top-color: transparent !important;
+}
+/* Keep landing page flat (no gradient) in light theme too */
+.theme-light .landing-page::before {
+    display: none !important;
+}
+/* SVG über dem Boreal-Verlauf + leichter dunkler Schleier für bessere Lesbarkeit */
+.landing-page::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(
+            180deg,
+            rgba(25, 103, 89, 0.72) 0%,
+            rgba(25, 103, 89, 0.45) 60%,
+            rgba(25, 103, 89, 0.3) 100%
+        ),
+        linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(0, 0, 0, 0.55) 55%,
+            rgba(0, 0, 0, 0.4) 100%
+        ),
+        url("/illustrations/head-metacih.svg") !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    filter: blur(2px);
+    z-index: -1 !important;
+    display: block !important;
+    pointer-events: none;
+}
+.theme-light .landing-page::after {
+    background-image: linear-gradient(
+            180deg,
+            rgba(25, 103, 89, 0.72) 0%,
+            rgba(25, 103, 89, 0.45) 60%,
+            rgba(25, 103, 89, 0.3) 100%
+        ),
+        linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(0, 0, 0, 0.55) 55%,
+            rgba(0, 0, 0, 0.4) 100%
+        ),
+        url("/illustrations/head-metacih.svg") !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    filter: blur(2px);
+    display: block !important;
+    z-index: -1 !important;
+}
+
+/* The background image should only be behind the cards area now */
+.landing-page::after,
+.theme-light .landing-page::after {
+    display: none !important;
+}
+/* Keep the area below cards a single flat tone */
+.theme-light .landing-page,
+.theme-light body.landing-page {
+    background: var(--dgps-boreal) !important;
+}
+
+/* Landing footer should also be green */
+body.landing-page footer.section {
+    background: var(--dgps-boreal) !important;
+}
+
+/* ========== Dark mode: Landing Page – nur Karten dunkel mit weißer Schrift ========== */
+/* html.theme-dark und body.theme-dark (Script setzt Klasse auf beide) */
+.theme-dark .landing-page,
+body.theme-dark.landing-page,
+html.theme-dark .landing-page,
+html.theme-dark body.landing-page {
+    background: rgba(30, 45, 50, 0.92) !important;
+}
+.theme-dark .landing-intro,
+body.theme-dark.landing-page .landing-intro,
+html.theme-dark .landing-intro,
+html.theme-dark body.landing-page .landing-intro {
+    background: rgba(30, 45, 50, 0.92) !important;
+}
+.theme-dark .landing-page header.banner.overlay.bg-cover,
+body.theme-dark.landing-page header.banner.overlay.bg-cover,
+html.theme-dark .landing-page header.banner.overlay.bg-cover,
+html.theme-dark body.landing-page header.banner.overlay.bg-cover {
+    background: rgba(30, 45, 50, 0.92) !important;
+}
+.theme-dark .landing-page .section.text-center.pb-0,
+body.theme-dark.landing-page .section.text-center.pb-0,
+html.theme-dark .landing-page .section.text-center.pb-0,
+html.theme-dark body.landing-page .section.text-center.pb-0 {
+    background: rgba(30, 45, 50, 0.92) !important;
+}
+.theme-dark .landing-bottom,
+body.theme-dark.landing-page .landing-bottom,
+html.theme-dark .landing-bottom,
+html.theme-dark body.landing-page .landing-bottom {
+    background: rgba(30, 45, 50, 0.92) !important;
+}
+.theme-dark body.landing-page footer.section,
+html.theme-dark body.landing-page footer.section {
+    background: rgba(30, 45, 50, 0.92) !important;
+}
+
+.theme-dark .landing-page section.section .col-lg-4 a.match-height,
+.theme-dark .landing-page section.section .col-sm-6 a.match-height,
+body.theme-dark.landing-page section.section .col-lg-4 a.match-height,
+body.theme-dark.landing-page section.section .col-sm-6 a.match-height {
+    background: rgba(30, 45, 50, 0.92) !important;
+    background-color: rgba(30, 45, 50, 0.92) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25) !important;
+}
+.theme-dark .landing-page section.section .col-lg-4 a.match-height:hover,
+.theme-dark .landing-page section.section .col-sm-6 a.match-height:hover,
+body.theme-dark.landing-page section.section .col-lg-4 a.match-height:hover,
+body.theme-dark.landing-page section.section .col-sm-6 a.match-height:hover {
+    background: rgba(40, 58, 65, 0.95) !important;
+    background-color: rgba(40, 58, 65, 0.95) !important;
+    color: #ffffff !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35) !important;
+}
+.theme-dark .landing-page section.section .col-lg-4 a.match-height h3,
+.theme-dark .landing-page section.section .col-sm-6 a.match-height h3,
+.theme-dark .landing-page section.section .col-lg-4 a.match-height .icon,
+.theme-dark .landing-page section.section .col-sm-6 a.match-height .icon,
+.theme-dark .landing-page section.section .col-lg-4 a.match-height i,
+.theme-dark .landing-page section.section .col-sm-6 a.match-height i,
+.theme-dark .landing-page section.section .col-lg-4 a.match-height *,
+.theme-dark .landing-page section.section .col-sm-6 a.match-height *,
+body.theme-dark.landing-page section.section .col-lg-4 a.match-height *,
+body.theme-dark.landing-page section.section .col-sm-6 a.match-height * {
+    color: #ffffff !important;
+}
+
+/* Header: kein eigenes Hintergrundbild, nur Inhalt */
+.landing-page header.banner.overlay.bg-cover {
+    min-height: 0 !important;
+    /* Keep everything the same boreal tone until the cards image starts */
+    background: var(--dgps-boreal) !important;
+    flex: 0 0 auto;
+}
+.landing-page header.banner.overlay.bg-cover::after,
+.landing-page header.banner.overlay.bg-cover::before {
+    display: none !important;
+}
+/* Banner-Bereich kompakt */
+.landing-page header.banner .container.section,
+.landing-page header.banner .banner-hero {
+    padding-top: 2rem !important;
+    padding-bottom: 0.75rem !important;
+}
+.landing-page .banner-hero .banner-title {
+    font-size: 2.5rem !important;
+    margin-bottom: 0.25rem !important;
+}
+@media (min-width: 768px) {
+    .landing-page .banner-hero .banner-title {
+        font-size: 3rem !important;
+    }
+}
+/* Intro + Karten: transparenter Hintergrund, Boreal-Kontrast */
+.landing-page .section.text-center.pb-0 {
+    background: var(--dgps-boreal) !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    margin-bottom: 0 !important;
+}
+.landing-page .section.text-center.pb-0,
+.landing-page .section.text-center.pb-0 p {
+    color: rgba(255, 255, 255, 0.95) !important;
+}
+.landing-page .landing-cards section.section {
+    background: transparent !important;
+    padding-top: 0.75rem !important;
+    padding-bottom: 0 !important;
+}
+.landing-page .landing-cards section.section .section-title {
+    margin-bottom: 1rem !important;
+    font-size: 1.35rem !important;
+    font-weight: 600 !important;
+    color: rgba(255, 255, 255, 0.98) !important;
+    letter-spacing: -0.01em !important;
+}
+/* Karten: modernes Glas-Design, Boreal-Akzente */
+.landing-page .landing-cards section.section .col-lg-4 a.match-height,
+.landing-page .landing-cards section.section .col-sm-6 a.match-height {
+    background: rgba(255, 255, 255, 0.95) !important;
+    min-height: 56px !important;
+    padding: 0.35rem 0.35rem !important;
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
+    box-shadow: 0 4px 24px rgba(25, 103, 89, 0.12) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+.landing-page .landing-cards section.section .col-lg-4 a.match-height:hover,
+.landing-page .landing-cards section.section .col-sm-6 a.match-height:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 32px rgba(25, 103, 89, 0.18) !important;
+}
+.landing-page .landing-cards section.section .row.justify-content-center > [class*="col-"] {
+    margin-bottom: 1.35rem !important;
+    padding-left: 1.1rem !important;
+    padding-right: 1.1rem !important;
+}
+/* "Browse by topic" Link im Hero für einfache Navigation */
+.banner-jump-link {
+    color: rgba(255,255,255,0.9) !important;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+.banner-jump-link:hover {
+    color: #fff !important;
+    text-decoration: underline;
+}
+.landing-page .section-title {
+    scroll-margin-top: 1rem;
+}
+
+/* ========== Landing: Themen als Liste (ohne Karten) ========== */
+.topics-list-section .topics-list-container {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.topics-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.topics-list-item {
+    margin: 0;
+    border-bottom: 1px solid var(--hr-color);
+}
+.topics-list-item:last-child {
+    border-bottom: none;
+}
+.topics-list-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 0.5rem;
+    color: var(--text-color-dark) !important;
+    text-decoration: none !important;
+    transition: color 0.15s ease, background 0.15s ease;
+}
+.topics-list-link:hover {
+    color: var(--dgps-boreal) !important;
+    background: rgba(0, 133, 111, 0.06);
+}
+.topics-list-icon {
+    font-size: 1.25rem;
+    color: var(--dgps-boreal);
+    flex-shrink: 0;
+}
+.topics-list-title {
+    font-weight: 600;
+    flex: 1;
+}
+.topics-list-desc {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    font-weight: 400;
+    display: none;
+}
+@media (min-width: 576px) {
+    .topics-list-desc {
+        display: block;
+        max-width: 280px;
+    }
+}
+.topics-list-arrow {
+    font-size: 0.85rem;
+    color: var(--dgps-boreal);
+    opacity: 0.8;
+    flex-shrink: 0;
+}
+.topics-list-section .section-title {
+    margin-bottom: 1.5rem !important;
+}
+@media (min-width: 768px) {
+    .topics-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 2rem;
+    }
+    .topics-list-item {
+        border-bottom: none;
+    }
+    .topics-list-link {
+        padding: 0.85rem 0.5rem;
+        border-radius: 0.5rem;
+    }
+}
+
+.shadow-bottom {
+}
+
+.ti-shine:visited {
+    color: red !important;
+}
+
+#strip {
+    display: none !important;
+}
+
+td > code {
+    padding: 0 !important;   
+}
+
+.notices.tip p {
+    border-top: 30px solid var(--color-tip-above) !important;
+    background: var(--color-tip) !important;
+}
+
+.notices.info p {
+    border-top: 30px solid var(--color-tip-above) !important;
+    background: var(--color-tip) !important;
+}
+
+.dropdown-menu {
+    border-radius: 0.75rem !important;
+    overflow: hidden;
+}
+.navbar .dropdown-menu {
+    z-index: 1050 !important;
+    overflow: visible !important;
+}
+.dropdown-item {
+    border-radius: 0.35rem !important;
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 125px;
+    overflow-x: hidden;
+    width: 350px;
+    background-color: var(--body-color) !important;
+    border-radius: 0.5rem !important;
+    font-size: 15px !important;
+    margin: 0px !important;
+    margin-top: 5px !important;
+}
+
+.scrollable-menu > li::before {
+    display: none;
+}
+
+.download-btn {
+    background-color: var(--dgps-boreal);
+    color: var(--body-color);
+}
+
+.expand-btn {
+    background-color: var(--bs-text);
+    color: var(--text-color);
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-bottom: 0px !important;
+    padding-top: 0px !important; 
+}
+.expand-btn:hover {
+    color: var(--dgps-boreal-dark) !important;
+    background-color: var(--bs-text) !important;
+}
+
+.card-body {
+    background-color: var(--body-color) !important;
+    padding: 0rem !important;
+}
+
+/* Transparenter Schleier in dgps-boreal über banner-abstract2 */
+.overlay::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0 !important;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 133, 112, 0.6) !important; /* dgps-boreal #00856f mit Transparenz */
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.section.text-center.pb-0 {
+    margin-bottom: -30px;
+}
+
+header.banner #documentationText {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    #documentationText{ display: none !important; }
+    #flow-svg {
+       height: 250px !important;
+    }
+ }
+
+ ::-moz-selection { /* Code for Firefox */
+    background: #ACCEF7 !important;
+    color: revert !important;
+  }
+  
+  ::selection {
+    background: #ACCEF7 !important;
+    color: revert !important;
+  }
+
+  .citation {
+    line-height: 200%;
+  }
+
+/* Restore footer logos to dark grey color */
+footer svg .st2,
+footer svg [class="st2"],
+footer svg path.st2,
+footer svg polygon.st2,
+footer svg rect.st2,
+footer svg path[fill="var(--bs-primary)"],
+footer svg path[fill*="--bs-primary"],
+footer svg polygon[fill="var(--bs-primary)"],
+footer svg polygon[fill*="--bs-primary"],
+footer svg rect[fill="var(--bs-primary)"],
+footer svg rect[fill*="--bs-primary"],
+footer svg path,
+footer svg polygon,
+footer svg rect {
+    fill: #636363 !important;
+}
+
+footer svg[id="Layer_1"] .st2,
+footer svg[id="Layer_1"] [class="st2"],
+footer svg[id="Layer_1"] path.st2,
+footer svg[id="Layer_1"] polygon.st2,
+footer svg[id="Layer_1"] rect.st2,
+footer svg[id="Layer_1"] path,
+footer svg[id="Layer_1"] polygon,
+footer svg[id="Layer_1"] rect,
+footer svg[id="Ebene_1"] path[fill="var(--bs-primary)"],
+footer svg[id="Ebene_1"] path[fill*="--bs-primary"],
+footer svg[id="Ebene_1"] path {
+    fill: #636363 !important;
+}
+
+/* Override CSS variable for logos specifically */
+footer .col-md-4 {
+    --bs-primary: #636363 !important;
+}
+
+footer svg {
+    --bs-primary: #636363 !important;
+}
+  
+header.shadow-bottom.sticky-top.bg-white {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    background-color: var(--dgps-boreal-dark) !important;
+    box-shadow: 0 0px rgba(12,13,14,1),0 1px 6px rgba(59,64,69,1) !important;
+    border-radius: 0 0 1rem 1rem !important;
+}
+
+/* Make navbar text white on dark boreal green header */
+header.shadow-bottom.sticky-top.bg-white .navbar-brand,
+header.shadow-bottom.sticky-top.bg-white .navbar-brand *,
+header.shadow-bottom.sticky-top.bg-white a.navbar-brand,
+header.shadow-bottom.sticky-top.bg-white a.navbar-brand *,
+header.shadow-bottom.sticky-top.bg-white .nav-link,
+header.shadow-bottom.sticky-top.bg-white .nav-link.text-dark,
+header.shadow-bottom.sticky-top.bg-white .dropdown-toggle,
+header.shadow-bottom.sticky-top.bg-white .navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+
+header.shadow-bottom.sticky-top.bg-white .nav-link:hover,
+header.shadow-bottom.sticky-top.bg-white .navbar-brand:hover,
+header.shadow-bottom.sticky-top.bg-white a.navbar-brand:hover,
+header.shadow-bottom.sticky-top.bg-white a.navbar-brand:hover *,
+header.shadow-bottom.sticky-top.bg-white .dropdown-toggle:hover,
+header.shadow-bottom.sticky-top.bg-white .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+header.banner.overlay.bg-cover > #strip {
+    margin-top: 0px !important;
+}
+
+span.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+a.nav-link.dropdown-toggle.text-dark {
+    color: white !important;
+}
+
+#content {
+    box-shadow: 0 0px rgba(12,13,14,1),0 1px 6px 3px rgba(59,64,69,0.12) !important;
+    border-radius: 1rem !important;
+}
+
+/* Better spacing between sidebar and content for integration */
+.single .row {
+    align-items: flex-start !important;
+}
+.col-lg-3 {
+    padding-right: 1.25rem !important;
+}
+.col-lg-9 {
+    padding-left: 1.25rem !important;
+}
+
+/* Smooth scroll behavior for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Active navigation item highlight */
+.sidebar .sidelist.active > a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 60%;
+    background: var(--dgps-boreal);
+    border-radius: 0 2px 2px 0;
+}
+.sidebar .sidelist > a {
+    position: relative;
+}
+
+.sidebar {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    padding: 0 !important;
+    position: sticky !important;
+    top: 100px !important;
+    transition: all 0.3s ease !important;
+}
+
+.col-lg-3 > .sidebar {
+    overflow-y: auto;
+    max-height: calc(100vh - 120px);
+    padding-right: 0 !important;
+}
+
+/* Smooth scrollbar styling */
+.col-lg-3 > .sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+.col-lg-3 > .sidebar::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+}
+.col-lg-3 > .sidebar::-webkit-scrollbar-thumb {
+    background: rgba(0, 133, 112, 0.3);
+    border-radius: 3px;
+}
+.col-lg-3 > .sidebar::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 133, 112, 0.5);
+}
+
+/* Verbesserte Sidebar-Navigation: besser integriert und benutzerfreundlicher */
+.sidebar .list-styled {
+    padding-left: 0 !important;
+    margin-bottom: 0.5rem !important;
+    padding-top: 0.5rem !important;
+    list-style: none !important;
+}
+.sidebar .list-styled > li.sidelist {
+    margin-bottom: 0.4rem !important;
+    list-style: none !important;
+    box-shadow: none !important;
+}
+.sidebar .list-styled > li.sidelist:hover {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    background: transparent !important;
+    background-color: transparent !important;
+}
+/* Kein Schatten unten am Titel-Link oder am Block (erster Eintrag / alle) */
+.sidebar .list-styled > li.sidelist:first-child,
+.sidebar .list-styled > li.sidelist:first-child:hover,
+.sidebar .list-styled > li.sidelist:first-child > a,
+.sidebar .list-styled > li.sidelist:first-child > a:hover,
+.sidebar .list-styled > li.sidelist:first-child > ul,
+.sidebar .list-styled > li.sidelist:first-child:hover > ul {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    filter: none !important;
+}
+.sidebar .list-styled > li.sidelist:hover > a {
+    background: transparent !important;
+}
+.sidebar .list-styled > li.sidelist:hover > ul {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+/* Beim Hover über Databases/General Information: kein grüner Balken beim ersten Unterpunkt */
+.sidebar .list-styled > li.sidelist:hover ul li:first-child > a,
+.sidebar .list-styled > li.sidelist:hover ul li:first-child {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.sidebar .list-styled > li.sidelist:hover ul li:first-child > a::before,
+.sidebar .list-styled > li.sidelist:hover ul li:first-child > a::after,
+.sidebar .list-styled > li.sidelist:hover ul li:first-child::before,
+.sidebar .list-styled > li.sidelist:hover ul li:first-child::after {
+    display: none !important;
+    content: none !important;
+    background: none !important;
+    height: 0 !important;
+    width: 0 !important;
+}
+.sidebar .list-styled > li.sidelist::before {
+    display: none !important;
+}
+.sidebar .list-styled > li.sidelist::marker {
+    display: none !important;
+}
+.sidebar .list-styled > li.sidelist > a {
+    padding: 0.65rem 0.85rem !important;
+    border-radius: 0.6rem !important;
+    display: block !important;
+    transition: background-color 0.2s ease, transform 0.2s ease !important;
+    font-weight: 500 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    outline: none !important;
+}
+/* Erstes Element (General Information, Databases etc.): keine Hover-Effekte, nur Toggle */
+.sidebar .list-styled > li.sidelist > a:hover {
+    background: transparent !important;
+    transform: none !important;
+    color: var(--dgps-boreal) !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -webkit-filter: none !important;
+}
+.sidebar .list-styled > li.sidelist > a:hover::before,
+.sidebar .list-styled > li.sidelist > a:hover::after {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    display: none !important;
+    content: none !important;
+    background: transparent !important;
+}
+/* Kein Schatten unten: Titel-Link und folgendes ul */
+.sidebar .list-styled > li.sidelist > a,
+.sidebar .list-styled > li.sidelist > a:hover,
+.sidebar .list-styled > li.sidelist > ul {
+    border-bottom: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+/* Remove ALL shadows from navigation items - especially on hover - MAXIMUM SPECIFICITY */
+.sidebar .list-styled > li.sidelist,
+.sidebar .list-styled > li.sidelist:hover,
+.sidebar .list-styled > li.sidelist > a,
+.sidebar .list-styled > li.sidelist > a:hover,
+.sidebar .list-styled > li.sidelist > a:focus,
+.sidebar .list-styled > li.sidelist > a:active,
+.sidebar .list-styled > li.sidelist.active > a,
+.sidebar .list-styled > li.sidelist > a.active,
+.sidebar .list-styled > li.sidelist:hover ul,
+.sidebar .list-styled > li.sidelist:hover ul li,
+.sidebar .list-styled > li.sidelist:hover ul li:last-child,
+.sidebar .list-styled > li.sidelist:hover ul li:last-child > a,
+.sidebar a,
+.sidebar a:hover,
+.sidebar a:focus,
+.sidebar a:active,
+.sidebar .list-styled > li.sidelist > a:hover *,
+.sidebar .list-styled > li.sidelist:hover * {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -webkit-filter: none !important;
+    outline: none !important;
+    drop-shadow: none !important;
+}
+.sidebar .list-styled > li.sidelist.active > a,
+.sidebar .list-styled > li.sidelist > a.active {
+    background: transparent !important;
+    color: var(--dgps-boreal-dark) !important;
+    font-weight: 600 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+/* CRITICAL: Remove shadow when hovering over main navigation item - must override theme CSS */
+.sidebar .list-styled > li.sidelist:hover > a,
+.sidebar .list-styled > li.sidelist > a:hover,
+.sidebar .list-styled > li.sidelist:hover > a:hover,
+.sidebar .list-styled > li:first-child.sidelist > a:hover,
+.sidebar .list-styled > li:first-child.sidelist:hover > a {
+    box-shadow: 0 0 0 transparent !important;
+    -webkit-box-shadow: 0 0 0 transparent !important;
+    -moz-box-shadow: 0 0 0 transparent !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -webkit-filter: none !important;
+    drop-shadow: none !important;
+}
+/* Also remove shadow from any pseudo-elements */
+.sidebar .list-styled > li.sidelist > a:hover::before,
+.sidebar .list-styled > li.sidelist > a:hover::after,
+.sidebar .list-styled > li.sidelist:hover > a::before,
+.sidebar .list-styled > li.sidelist:hover > a::after {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    display: none !important;
+}
+
+.sidebar .list-styled li.sidelist ul {
+    margin-top: 0.3rem !important;
+    margin-bottom: 0 !important;
+    padding-left: 0.5rem !important;
+    padding-bottom: 0 !important;
+    padding-right: 0 !important;
+    border-left: none !important;
+    border-bottom: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    border: none !important;
+    list-style: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    background: transparent !important;
+    background-color: transparent !important;
+}
+.sidebar .list-styled > li.sidelist:hover ul {
+    background: transparent !important;
+    background-color: transparent !important;
+    border-bottom: none !important;
+    border: none !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+.sidebar .list-styled li.sidelist ul::after,
+.sidebar .list-styled li.sidelist ul::before {
+    display: none !important;
+    content: none !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    height: 0 !important;
+    width: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+.sidebar .list-styled > li.sidelist:hover ul::after,
+.sidebar .list-styled > li.sidelist:hover ul::before {
+    display: none !important;
+    content: none !important;
+    background: none !important;
+    background-color: transparent !important;
+    height: 0 !important;
+    width: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+/* Grünen Balken unten beim Hover über Sektion (z. B. Data Preparation) entfernen */
+.sidebar .list-styled > li.sidelist ul,
+.sidebar .list-styled > li.sidelist:hover ul {
+    position: relative;
+}
+.sidebar .list-styled > li.sidelist ul::after,
+.sidebar .list-styled > li.sidelist ul::before,
+.sidebar .list-styled > li.sidelist:hover ul::after,
+.sidebar .list-styled > li.sidelist:hover ul::before {
+    content: none !important;
+    display: none !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    background: none !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.sidebar .list-styled li.sidelist ul li:last-child::after,
+.sidebar .list-styled li.sidelist ul li:last-child::before,
+.sidebar .list-styled > li.sidelist:hover ul li:last-child::after,
+.sidebar .list-styled > li.sidelist:hover ul li:last-child::before {
+    content: none !important;
+    display: none !important;
+    height: 0 !important;
+    background: none !important;
+    background-color: transparent !important;
+}
+/* Beim Hover über Sektions-Header (z. B. Data Preparation): kein grüner Balken, keine grünen Flächen */
+.sidebar .list-styled > li.sidelist:hover,
+.sidebar .list-styled > li.sidelist:hover *,
+.sidebar .list-styled > li.sidelist:hover *::before,
+.sidebar .list-styled > li.sidelist:hover *::after {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    border-color: transparent !important;
+    border-bottom-color: transparent !important;
+}
+.sidebar .list-styled > li.sidelist:hover ul,
+.sidebar .list-styled > li.sidelist:hover ul * {
+    background-color: transparent !important;
+    background: transparent !important;
+}
+.sidebar .list-styled li.sidelist ul li {
+    list-style: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+.sidebar .list-styled li.sidelist ul li:last-child {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    background: transparent !important;
+    border-bottom: none !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+.sidebar .list-styled li.sidelist ul li:last-child > a {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    border-bottom: none !important;
+    border: none !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+.sidebar .list-styled li.sidelist ul li:last-child > a::after,
+.sidebar .list-styled li.sidelist ul li:last-child > a::before {
+    display: none !important;
+    content: none !important;
+    background: transparent !important;
+}
+.sidebar .list-styled > li.sidelist:hover ul li:last-child,
+.sidebar .list-styled > li.sidelist:hover ul li:last-child > a {
+    background: transparent !important;
+    border-bottom: none !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+.sidebar .list-styled li.sidelist ul li::before,
+.sidebar .list-styled li.sidelist ul li::marker {
+    display: none !important;
+    content: none !important;
+}
+/* Theme-Bullets (.list-styled li::before) in der Sidebar komplett ausblenden – verhindert grüne Punkte/Balken */
+.sidebar .list-styled li::before {
+    display: none !important;
+    content: none !important;
+    height: 0 !important;
+    width: 0 !important;
+    min-height: 0 !important;
+    min-width: 0 !important;
+    background: none !important;
+    background-color: transparent !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    position: absolute !important;
+    left: -9999px !important;
+    pointer-events: none !important;
+}
+/* Grünen Balken bei Hover über erstes Element (z. B. Databases) entfernen */
+.sidebar .list-styled > li.sidelist:hover li::before,
+.sidebar .list-styled > li.sidelist > a:hover ~ ul li::before,
+.sidebar .list-styled > li.sidelist ul li:first-child::before {
+    display: none !important;
+    content: none !important;
+    height: 0 !important;
+    width: 0 !important;
+    background: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    position: absolute !important;
+    left: -9999px !important;
+}
+.sidebar .list-styled li.sidelist ul li.sidelist > a {
+    padding: 0.45rem 0.75rem !important;
+    border-radius: 0.5rem !important;
+    font-size: 0.92em !important;
+    transition: all 0.2s ease !important;
+}
+/* Unterelemente: nur leichte Bewegung beim Hover, keine farblichen Effekte */
+.sidebar .list-styled li.sidelist ul li.sidelist > a:hover {
+    background: transparent !important;
+    padding-left: 0.9rem !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+/* Kein grüner Balken/Bereich unter Sidebar-Unterpunkten beim Hover */
+.sidebar .list-styled li.sidelist ul li.sidelist > a:hover::before,
+.sidebar .list-styled li.sidelist ul li.sidelist > a:hover::after,
+.sidebar .list-styled li.sidelist ul li.sidelist:hover > a::before,
+.sidebar .list-styled li.sidelist ul li.sidelist:hover > a::after {
+    display: none !important;
+    content: none !important;
+    background: none !important;
+    height: 0 !important;
+    width: 0 !important;
+}
+.sidebar .list-styled li.sidelist ul li.sidelist:first-child > a:hover::before,
+.sidebar .list-styled li.sidelist ul li.sidelist:first-child > a:hover::after,
+.sidebar .list-styled li.sidelist ul li.sidelist:first-child:hover > a::before,
+.sidebar .list-styled li.sidelist ul li.sidelist:first-child:hover > a::after {
+    display: none !important;
+    content: none !important;
+    background: none !important;
+}
+.sidebar .list-styled li.sidelist ul li.sidelist.active > a,
+.sidebar .list-styled li.sidelist ul li.sidelist > a.active {
+    background: transparent !important;
+    color: var(--dgps-boreal-dark) !important;
+    font-weight: 500 !important;
+    border-left: none !important;
+    padding-left: 0.75rem !important;
+}
+.sidebar .home-btn {
+    border-radius: 0.6rem !important;
+    margin-bottom: 1rem !important;
+    transition: background-color 0.2s ease, transform 0.2s ease !important;
+    padding: 0.5rem !important;
+    margin-left: 0 !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -webkit-filter: none !important;
+    background: transparent !important;
+}
+.sidebar .home-btn:hover {
+    background: transparent !important;
+    transform: translateX(-2px) !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -webkit-filter: none !important;
+}
+.sidebar .home-btn::before,
+.sidebar .home-btn::after {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -webkit-filter: none !important;
+    background-color: transparent !important;
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    content: none !important;
+    display: none !important;
+}
+.sidebar .home-btn:hover::before,
+.sidebar .home-btn:hover::after {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -webkit-filter: none !important;
+    background-color: transparent !important;
+}
+/* Remove ALL shadows and green backgrounds from sidebar - comprehensive override */
+.sidebar *,
+.sidebar *:hover,
+.sidebar *:focus,
+.sidebar *:active {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -webkit-filter: none !important;
+    drop-shadow: none !important;
+}
+.sidebar *::before,
+.sidebar *::after {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -webkit-filter: none !important;
+}
+/* Specifically target back-btn and its children to remove any green shadow/background */
+.sidebar .home-btn,
+.sidebar .home-btn *,
+.sidebar .home-btn:hover,
+.sidebar .home-btn:hover * {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -webkit-filter: none !important;
+    outline: none !important;
+    border: none !important;
+}
+.sidebar .home-btn {
+    background: none !important;
+}
+
+.sidebar .home-btn i.bi {
+    font-size: 30px;
+    line-height: 1;
+    color: var(--dgps-boreal);
+    display: inline-block;
+}
+
+.sidebar .home-btn:hover i.bi {
+    color: var(--dgps-boreal-dark);
+}
+
+/* Bottom navigation: replace prev/next with "Top" button */
+.pagination {
+    justify-content: flex-end;
+}
+
+.pagination .nav.nav-top i.bi {
+    font-size: 22px;
+    vertical-align: middle;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+/* Theme toggle icon styles */
+#theme-icon {
+    transition: all 0.3s ease;
+    transform-origin: center;
+    vertical-align: middle;
+    line-height: 1;
+    display: inline-block;
+}
+
+#theme-icon:hover {
+    transform: scale(1.1);
+    color: var(--dgps-boreal-dark) !important;
+}
+
+/* Better alignment for the theme toggle button */
+#mode-switch-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+}
+
+#mode-switch-inner i {
+    margin: 0;
+    padding: 0;
+}
+
+/* Theme changes without transitions - instant switching */
+
+/* Override theme's uppercase transformation for navigation */
+.navbar .nav-item .nav-link {
+    text-transform: none !important;
+    font-size: 1rem !important;
+}
+
+/* Hide contact header icon on mobile */
+@media only screen and (max-width: 768px) {
+    .contact-header-icon {
+        display: none !important;
+    }
+}
+
+/* Mobile burger menu for databases sidebar */
+@media only screen and (max-width: 768px) {
+    /* Hide sidebar by default on mobile for databases pages */
+    body.databases-page .col-lg-3 {
+        display: none;
+    }
+    
+    /* Make content full width on mobile for databases pages */
+    body.databases-page .col-lg-9 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    /* Remove all horizontal padding and margins from col-lg-9 containing #content on mobile */
+    .col-lg-9 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    
+    /* Remove max-height from sidebar on mobile */
+    body.databases-page .col-lg-3 > .sidebar {
+        max-height: none !important;
+    }
+    
+    /* Burger menu button - bottom right, quadratic */
+    .sidebar-burger-btn {
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        z-index: 1050;
+        background-color: var(--dgps-boreal);
+        color: white;
+        border: none;
+        border-radius: 4px;
+        width: 44px;
+        height: 44px;
+        padding: 0;
+        cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .sidebar-burger-btn:hover {
+        background-color: var(--dgps-boreal-dark);
+    }
+    
+    .sidebar-burger-btn i {
+        font-size: 20px;
+    }
+    
+    /* Sidebar overlay when open */
+    .sidebar-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1040;
+        display: none;
+    }
+    
+    .sidebar-overlay.active {
+        display: block;
+    }
+    
+    /* Sidebar when open - full width, no padding on container */
+    body.databases-page.sidebar-open .col-lg-3 {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 1050;
+        background-color: var(--body-color);
+        overflow-y: auto;
+        padding: 0;
+    }
+    
+    /* Prevent body scroll when sidebar is open */
+    body.databases-page.sidebar-open {
+        overflow: hidden;
+    }
+    
+    /* Remove top padding from section-sm on databases pages on mobile */
+    body.databases-page .section-sm {
+        padding-top: 0px !important;
+    }
+}
+
+/* Hide sidebar burger button on laptop screens */
+@media (min-width: 769px) {
+    .sidebar-burger-btn {
+        display: none !important;
+    }
+}
+
+/* Override any remaining blue colors with boreal green - very specific selectors */
+.text-primary,
+.text-primary *,
+a.text-primary,
+span.text-primary,
+div.text-primary,
+i.text-primary,
+.icon.text-primary,
+i.icon.text-primary {
+    color: var(--dgps-boreal) !important;
+}
+
+.text-primary:hover,
+.text-primary:hover *,
+a.text-primary:hover,
+span.text-primary:hover,
+div.text-primary:hover,
+i.text-primary:hover,
+.icon.text-primary:hover,
+i.icon.text-primary:hover {
+    color: var(--dgps-boreal-dark) !important;
+}
+
+/* Landing page section icons - grey color */
+/* Target icons specifically in the landing page section cards */
+section.section .col-lg-4 .icon.text-primary,
+section.section .col-lg-4 i.icon.text-primary,
+section.section .col-sm-6 .icon.text-primary,
+section.section .col-sm-6 i.icon.text-primary,
+.col-lg-4 .match-height .icon.text-primary,
+.col-lg-4 .match-height i.icon.text-primary,
+.col-sm-6 .match-height .icon.text-primary,
+.col-sm-6 .match-height i.icon.text-primary {
+    color: #636363 !important;
+}
+
+section.section .col-lg-4 .icon.text-primary:hover,
+section.section .col-lg-4 i.icon.text-primary:hover,
+section.section .col-sm-6 .icon.text-primary:hover,
+section.section .col-sm-6 i.icon.text-primary:hover,
+.col-lg-4 .match-height .icon.text-primary:hover,
+.col-lg-4 .match-height i.icon.text-primary:hover,
+.col-sm-6 .match-height .icon.text-primary:hover,
+.col-sm-6 .match-height i.icon.text-primary:hover {
+    color: #636363 !important;
+}
+
+/* Section headers on homepage cards - very specific */
+h3.mb-3.mt-0,
+h3.mb-3,
+h3.mt-0,
+.col-lg-4 h3,
+.col-lg-4 h3.mb-3,
+.col-lg-4 h3.mt-0,
+section h3,
+section h3.mb-3,
+section h3.mt-0 {
+    color: var(--dgps-boreal) !important;
+}
+
+h3.mb-3.mt-0:hover,
+h3.mb-3:hover,
+h3.mt-0:hover,
+.col-lg-4 h3:hover,
+section h3:hover {
+    color: var(--dgps-boreal-dark) !important;
+}
+
+/* ========== Modernes Landing-Page-Design (rundere Kanten, volles Bild) ========== */
+
+/* Themen-Karten übersichtlicher: einheitliche Abstände, klare Anordnung */
+section.section .container {
+    max-width: 1100px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+section.section .row.justify-content-center {
+    margin-left: -0.75rem !important;
+    margin-right: -0.75rem !important;
+}
+section.section .row.justify-content-center > [class*="col-"] {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+    margin-bottom: 1.5rem !important;
+}
+section.section .col-lg-4 a.match-height,
+section.section .col-sm-6 a.match-height,
+a.px-4.py-5.bg-white.shadow.text-center.d-block.match-height {
+    border-radius: 1.25rem !important;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    min-height: 180px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 2rem 1.5rem !important;
+}
+section.section .col-lg-4 a.match-height:hover,
+section.section .col-sm-6 a.match-height:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.12) !important;
+}
+
+/* Sektion-Überschrift und Abstand */
+section.section .section-title {
+    margin-bottom: 2.5rem !important;
+    font-size: 1.75rem !important;
+}
+section.section {
+    padding-top: 3rem !important;
+    padding-bottom: 4rem !important;
+}
+
+/* Suchfeld im Banner – modern, Boreal-Akzent */
+header.banner .form-control#search {
+    border-radius: 2rem !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+}
+.landing-page header.banner .form-control#search:focus {
+    border-color: var(--dgps-boreal) !important;
+    box-shadow: 0 0 0 2px rgba(0, 133, 112, 0.25) !important;
+}
+
+.banner-search-wrap {
+    position: relative !important;
+}
+
+/* Topics dropdown in top-right nav only */
+.nav-topics-dropdown .dropdown-menu {
+    min-width: 12rem;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+.nav-topics-menu .dropdown-item {
+    font-weight: 500;
+}
+
+/* Container-Sektion unter dem Banner */
+.section.text-center.pb-0 {
+    border-radius: 0 0 1.5rem 1.5rem;
+}
+.section.text-center.pb-0 .container {
+    max-width: 720px;
+}
+
+/* Dark mode: Landing-Page-Karten dunkel mit weißer Schrift (am Ende, überschreibt alles) */
+html.theme-dark body.landing-page section.section .col-lg-4 a.match-height,
+html.theme-dark body.landing-page section.section .col-sm-6 a.match-height,
+body.theme-dark.landing-page section.section .col-lg-4 a.match-height,
+body.theme-dark.landing-page section.section .col-sm-6 a.match-height,
+html.theme-dark .landing-page section.section .col-lg-4 a.match-height,
+html.theme-dark .landing-page section.section .col-sm-6 a.match-height,
+html.theme-dark .landing-page a.px-4.py-5.bg-white.shadow.text-center.d-block.match-height,
+html.theme-dark body.landing-page a.px-4.py-5.bg-white.shadow.text-center.d-block.match-height,
+body.theme-dark.landing-page a.px-4.py-5.bg-white.shadow.text-center.d-block.match-height {
+    background: rgba(30, 45, 50, 0.92) !important;
+    background-color: rgba(30, 45, 50, 0.92) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25) !important;
+}
+html.theme-dark body.landing-page section.section .col-lg-4 a.match-height:hover,
+html.theme-dark body.landing-page section.section .col-sm-6 a.match-height:hover,
+body.theme-dark.landing-page section.section .col-lg-4 a.match-height:hover,
+body.theme-dark.landing-page section.section .col-sm-6 a.match-height:hover,
+html.theme-dark .landing-page section.section .col-lg-4 a.match-height:hover,
+html.theme-dark .landing-page section.section .col-sm-6 a.match-height:hover,
+html.theme-dark .landing-page a.px-4.py-5.bg-white.shadow.text-center.d-block.match-height:hover,
+html.theme-dark body.landing-page a.px-4.py-5.bg-white.shadow.text-center.d-block.match-height:hover,
+body.theme-dark.landing-page a.px-4.py-5.bg-white.shadow.text-center.d-block.match-height:hover {
+    background: rgba(40, 58, 65, 0.95) !important;
+    background-color: rgba(40, 58, 65, 0.95) !important;
+    color: #ffffff !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35) !important;
+}
+html.theme-dark body.landing-page section.section .col-lg-4 a.match-height *,
+html.theme-dark body.landing-page section.section .col-sm-6 a.match-height *,
+body.theme-dark.landing-page section.section .col-lg-4 a.match-height *,
+body.theme-dark.landing-page section.section .col-sm-6 a.match-height *,
+html.theme-dark .landing-page section.section .col-lg-4 a.match-height *,
+html.theme-dark .landing-page section.section .col-sm-6 a.match-height *,
+html.theme-dark .landing-page a.px-4.py-5.bg-white.shadow.text-center.d-block.match-height *,
+html.theme-dark body.landing-page a.px-4.py-5.bg-white.shadow.text-center.d-block.match-height *,
+body.theme-dark.landing-page a.px-4.py-5.bg-white.shadow.text-center.d-block.match-height * {
+    color: #ffffff !important;
+}
+

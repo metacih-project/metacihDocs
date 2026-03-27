@@ -1,0 +1,48 @@
+<span id="ph-registration"></span>
+
+<span id="spinner-ph-registration" class="loader-spinner"></span>
+<style>
+.loader-spinner { width: 20px; height: 20px; margin-bottom: -5px; border: 2px solid rgb(133, 133, 133);
+    border-bottom-color: transparent; border-radius: 50%; display: inline-block;
+    box-sizing: border-box; animation: rotation 1s linear infinite;}
+    @keyframes rotation {0% {transform: rotate(0deg);} 100% {transform: rotate(360deg);}} 
+</style>
+
+<script defer>
+var randID = makeid(10);
+
+async function renderRegistration() {
+  // Wait for data to be loaded
+  while (!isDataSaved()) {
+    await new Promise(resolve => setTimeout(resolve, 1000));
+  }
+
+  const conceptDOI = "{{.Get `doi`}}";
+  
+  try {
+    const content = await getMetadataFile(conceptDOI, "metadata/registration.txt");
+    const url = content.trim();
+    
+    const link = document.createElement("a");
+    link.innerText = "{{.Get `text`}}";
+    link.setAttribute("href", url);
+    link.setAttribute("target", "blank");
+    
+    // Hide spinner
+    document.getElementById("spinner-ph-registration").style.display = "none";
+    
+    // Update content
+    const div = document.getElementById("ph-registration");
+    div.id = div.id + "-" + randID;
+    div.appendChild(link);
+  } catch (error) {
+    console.error("Error loading registration:", error);
+    document.getElementById("spinner-ph-registration").style.display = "none";
+    const div = document.getElementById("ph-registration");
+    div.id = div.id + "-" + randID;
+    div.innerHTML = "<em>Error loading registration</em>";
+  }
+}
+
+renderRegistration();
+</script>

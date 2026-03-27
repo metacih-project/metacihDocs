@@ -1,0 +1,42 @@
+<span id="ph-shorthand"></span>
+
+<span id="spinner-ph-shorthand" class="loader-spinner"></span>
+<style>
+.loader-spinner { width: 20px; height: 20px; margin-bottom: -5px; border: 2px solid rgb(133, 133, 133);
+    border-bottom-color: transparent; border-radius: 50%; display: inline-block;
+    box-sizing: border-box; animation: rotation 1s linear infinite;}
+    @keyframes rotation {0% {transform: rotate(0deg);} 100% {transform: rotate(360deg);}} 
+</style>
+
+<script defer>
+var randID = makeid(10);
+
+async function renderShorthand() {
+  // Wait for data to be loaded
+  while (!isDataSaved()) {
+    await new Promise(resolve => setTimeout(resolve, 1000));
+  }
+
+  const conceptDOI = "{{.Get `doi`}}";
+  
+  try {
+    const content = await getMetadataFile(conceptDOI, "metadata/shorthand.txt");
+    
+    // Hide spinner
+    document.getElementById("spinner-ph-shorthand").style.display = "none";
+    
+    // Update content
+    const div = document.getElementById("ph-shorthand");
+    div.id = div.id + "-" + randID;
+    div.innerHTML = "<code>" + content + "</code>";
+  } catch (error) {
+    console.error("Error loading shorthand:", error);
+    document.getElementById("spinner-ph-shorthand").style.display = "none";
+    const div = document.getElementById("ph-shorthand");
+    div.id = div.id + "-" + randID;
+    div.innerHTML = "<em>Error loading shorthand</em>";
+  }
+}
+
+renderShorthand();
+</script>
