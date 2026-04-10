@@ -97,6 +97,11 @@ weight = 4
 name = "Topics"
 hasChildren = true
 
+[[Languages.en.menu.main]]
+weight = 5
+name = "Meta-Analysis Tool"
+url = "meta-analysis-tool/"
+
   [[Languages.en.menu.main]]
   parent = "Topics"
   name = "General Information"

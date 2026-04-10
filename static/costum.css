@@ -350,7 +350,8 @@ header.banner.overlay.bg-cover {
     background-color: rgba(0, 0, 0, 1) !important;
     color: black !important;
     position: relative;
-    overflow: hidden;
+    /* allow nav dropdowns to extend outside the hero */
+    overflow: visible !important;
 }
 
 /* head-metacih.svg als Hintergrundbild */
@@ -727,8 +728,14 @@ body.theme-dark.landing-page section.section .col-sm-6 a.match-height * {
 }
 .landing-page .landing-cards section.section {
     background: transparent !important;
+    padding-top: 2.25rem !important;
+    padding-bottom: 2.25rem !important;
+}
+
+/* Landing: extra breathing room around the 6 topic cards */
+.landing-page .landing-cards {
     padding-top: 0.75rem !important;
-    padding-bottom: 0 !important;
+    padding-bottom: 0.75rem !important;
 }
 .landing-page .landing-cards section.section .section-title {
     margin-bottom: 1rem !important;
@@ -874,14 +881,22 @@ td > code {
 
 .dropdown-menu {
     border-radius: 0.75rem !important;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 .navbar .dropdown-menu {
     z-index: 1050 !important;
-    overflow: visible !important;
+    /* rounded, but still allow scrolling if needed */
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    padding: 0.35rem !important;
+    border-radius: 0.9rem !important;
 }
 .dropdown-item {
     border-radius: 0.35rem !important;
+    padding-top: 0.55rem !important;
+    padding-bottom: 0.55rem !important;
+    line-height: 1.25 !important;
 }
 
 .scrollable-menu {
