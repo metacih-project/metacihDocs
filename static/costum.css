@@ -525,24 +525,69 @@ body.landing-page {
 }
 
 /* Landing: About MetaCIH – justified body text */
-#about-metacih p,
-#about-metacih li {
-    text-align: justify !important;
-    text-justify: inter-word;
+#about-metacih p {
+    font-size: 1.05rem;
+    line-height: 1.65;
+}
+#about-metacih .about-metacih-lead {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 0.9rem;
+}
+#about-metacih .about-metacih-meta {
+    opacity: 0.92;
+    text-align: left;
+    margin-bottom: 1.25rem;
+}
+#about-metacih .about-metacih-kicker {
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    text-align: left;
 }
 #about-metacih .about-metacih-goals {
-    list-style: none;
-    padding-left: 0;
+    margin-top: 0.25rem;
 }
-#about-metacih .about-metacih-goals li {
-    margin-bottom: 1rem;
-    line-height: 1.55;
+#about-metacih .about-metacih-goal {
+    display: flex;
+    gap: 0.85rem;
+    align-items: flex-start;
+    padding: 0.9rem 1rem;
+    border-radius: 0.9rem;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
 }
-#about-metacih .about-metacih-goals li i.bi {
-    font-size: 1.05rem;
-    margin-right: 0.55rem;
-    vertical-align: -0.12em;
+#about-metacih .about-metacih-goal i.bi {
+    font-size: 1.15rem;
+    margin-top: 0.1rem;
     opacity: 0.95;
+}
+#about-metacih .about-metacih-goal-title {
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+#about-metacih .about-metacih-goal-text {
+    opacity: 0.95;
+    /* keep cards visually consistent without adding lots of empty space */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+
+@media (max-width: 575px) {
+    #about-metacih .about-metacih-title {
+        font-size: 2rem !important;
+    }
+    #about-metacih .about-metacih-inline-title {
+        font-size: 1.4rem !important;
+    }
+    #about-metacih .about-metacih-lead {
+        font-size: 1.12rem;
+    }
 }
 
 /* Make the horizontal divider invisible */
@@ -618,6 +663,11 @@ body.landing-page {
 /* Landing footer should also be green */
 body.landing-page footer.section {
     background: var(--dgps-boreal) !important;
+}
+
+/* Landing footer copyright should be white */
+body.landing-page footer.section p {
+    color: #ffffff !important;
 }
 
 /* ========== Dark mode: Landing Page – nur Karten dunkel mit weißer Schrift ========== */
@@ -763,6 +813,13 @@ body.theme-dark.landing-page section.section .col-sm-6 a.match-height * {
     margin-bottom: 1.35rem !important;
     padding-left: 1.1rem !important;
     padding-right: 1.1rem !important;
+    /* make each column stretch its card */
+    display: flex !important;
+}
+.landing-page .landing-cards section.section .row.justify-content-center > [class*="col-"] > a.match-height {
+    /* ensure all cards have equal height within a row */
+    height: 100% !important;
+    width: 100% !important;
 }
 /* "Browse by topic" Link im Hero für einfache Navigation */
 .banner-jump-link {
