@@ -2,7 +2,7 @@
 title: R Packages and API 
 date: 2018-12-28T11:02:05.000+06:00
 icon: fa-brands fa-r-project
-description: Technical Documentation for the MetaCIH R Packages
+description: Technical Documentation for the MetaCIH R Packages and API
 type: docs
 weight: "5"
 
