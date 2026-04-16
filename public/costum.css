@@ -491,7 +491,10 @@ body.landing-page {
 
 /* Landing page: everything below cards is white */
 .landing-bottom {
+    /* fallback */
     background: var(--dgps-boreal) !important;
+    /* preferred: same color, slightly transparent */
+    background: rgba(0, 133, 111, 0.88) !important; /* = --dgps-boreal (#00856f) with alpha */
 }
 .landing-bottom .section-title,
 .landing-bottom,
@@ -511,11 +514,31 @@ body.landing-page {
     margin-top: 0.25rem !important;
     text-align: center !important;
 }
+
+/* About section (landing page) */
+#about-metacih.section {
+    /* keep the green landing background visible */
+    background: transparent !important;
+}
+
+/* Remove divider line above the About section */
+.landing-bottom hr {
+    border-top-color: transparent !important;
+    opacity: 0 !important;
+}
+
+/* Text colors inside the section */
 #about-metacih,
 #about-metacih * {
     color: rgba(255, 255, 255, 0.95) !important;
 }
+#about-metacih .about-metacih-title,
+#about-metacih .about-metacih-goal-title {
+    color: rgba(255, 255, 255, 0.98) !important;
+    font-weight: 800 !important;
+}
 #about-metacih a {
+    color: rgba(255, 255, 255, 0.98) !important;
     text-decoration: none !important;
     font-weight: 700 !important;
 }
@@ -550,6 +573,9 @@ body.landing-page {
 }
 #about-metacih .about-metacih-goals {
     margin-top: 0.25rem;
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
 }
 #about-metacih .about-metacih-goal {
     display: flex;
@@ -557,8 +583,21 @@ body.landing-page {
     align-items: flex-start;
     padding: 0.9rem 1rem;
     border-radius: 0.9rem;
+    /* modern card style: light green glass */
     background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    box-shadow:
+        0 12px 26px rgba(0, 0, 0, 0.14),
+        inset 0 1px 0 rgba(255, 255, 255, 0.12);
+    transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease, border-color 160ms ease;
+}
+#about-metacih .about-metacih-goal:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.11);
+    border-color: rgba(255, 255, 255, 0.22);
+    box-shadow:
+        0 16px 34px rgba(0, 0, 0, 0.16),
+        inset 0 1px 0 rgba(255, 255, 255, 0.14);
 }
 #about-metacih .about-metacih-goal i.bi {
     font-size: 1.15rem;
@@ -587,6 +626,9 @@ body.landing-page {
     }
     #about-metacih .about-metacih-lead {
         font-size: 1.12rem;
+    }
+    #about-metacih .about-metacih-box {
+        padding: 2rem 1.5rem;
     }
 }
 
