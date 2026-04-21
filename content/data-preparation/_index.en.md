@@ -18,7 +18,8 @@ This documentation section describes how the databases included in MetaCIH are p
 
 Before being released, all data is converted into a consistent, **standardized format**. This format ensures that data is compatible with other components of the MetaCIH infrastructure.
 
-All released databases live in their own online [Github](https://github.com/) repository. These repositories are hosted by the [`metacih-project`](https://github.com/metacih-project) organization account. All database repository names start with `data-`, followed by the [shorthand](https://docs.metapsy.org/databases/#shorthand) of the database (e.g. `data-depression-psyctr`).
+All released databases live in their own online [Github](https://github.com/) repository. These repositories are hosted by the [`metacih-project`](https://github.com/metacih-project) organization account. All database repository names start with `data-`, followed by the 
+<strong>shorthand</strong> of the database (e.g. `data-depression-psyctr`).
 
 All MetaCIH databases hosted on Github follow the same folder structure. In particular, a [**metadata**](/data-preparation/metadata/) folder is included in each repository. This folder contains additional information associated with the dataset (e.g. the search date, the number of studies, or a variable description).
 

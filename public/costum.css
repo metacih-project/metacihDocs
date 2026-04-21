@@ -464,8 +464,8 @@ body.landing-page {
     right: 0;
     bottom: 0;
     background-image: url("/illustrations/head-metacih.svg") !important;
-    /* Zoom out further to show more of the full head */
-    background-size: 49% auto !important;
+    /* Scale by the (now stabilized) area height */
+    background-size: auto 115% !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
     z-index: -2;

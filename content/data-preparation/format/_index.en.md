@@ -13,7 +13,7 @@ weight: 1
 
 All released MetaCIH databases follow a uniform data formatting standard. This includes both the meta-analytic datasets per se, as well as the meta-data provided for the data. Database repositories themselves also follow a predefined folder structure.
 
-All database objects (datasets, metadata) are provided in a **machine-readable format** (.csv, .json, .txt). This ensures interoperability with other MetaCIH software components (e.g. the automatized [database documentation](/databases), the [Metapsy API](https://docs.metapsy.org/r-packages/api/)), as well as external software and programming languages in general.
+All database objects (datasets, metadata) are provided in a **machine-readable format** (.csv, .json, .txt). This ensures interoperability with other MetaCIH software components (e.g. the automatized [database documentation](/databases), the [MetaCIH API](/r-packages/api/)), as well as external software and programming languages in general.
 
 Collectively, we refer to this set of data formatting and storage rules as the **MetaCIH data standard**.
 

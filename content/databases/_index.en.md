@@ -44,10 +44,10 @@ Each released database is automatically indexed using **[Zenodo](https://www.zen
 
 <br>
 
-<img src="/uploads/browse.png" style="width: 200px;">
+<!-- <img src="/uploads/browse.png" style="width: 200px;"> 
 
 
-<br>
+<br> -->
 
 #### Shorthand
 
