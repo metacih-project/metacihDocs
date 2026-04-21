@@ -11,19 +11,21 @@ weight: "6"
 
 <img src="/uploads/ma-tool.jpg" width="100%" style="border-radius: 5px;">
 
-The Metapsy meta-analysis tool has been developed to make the available datasets more accessible for various stakeholders, without requiring programming skills. These graphical user interfaces allow to analyze existing versions of datasets using state-of-the-art meta-analytic methods. An overview of available tools is provided on the [MetaCIH website](https://metacih.metapsy.dev/). 
+The Metapsy meta-analysis tool has been developed to make the available datasets more accessible for various stakeholders, without requiring programming skills. These graphical user interfaces allow to analyze existing versions of datasets using state-of-the-art meta-analytic methods. An overview of available tools is provided on the [MetaCIH website](https://metacih.org/). 
 
 <br>
 
 #### Starting Page
 ***
 
-The starting page of each meta-analysis tool displays some basic information on the available dataset. To the right, the number of available studies and the [dataset version](/release/#versioning) is shown. 
+The **starting page** of each meta-analysis tool displays some basic information on the available dataset. To the right, the number of available studies and the [dataset version](/release/#versioning) is shown. 
 
+<!--
 <img src="/uploads/app-1.webp" width="500" style="box-shadow: 0px 0px 10px gray; pointer-events: none;">
+ -->
 <br>
 
-The **additional information** section at the bottom contains further links and information on the dataset. It also provides the link to the R **script** that was used to **simplify the data** for the online meta-analysis tool. Most datasets are simplified slightly to reduce the complexity of analyses within the app. A main step conducted in all simplification scripts is to **aggregate** all effect sizes within studies. This is done using the [`runMetaAnalysis`](https://tools.metapsy.org/reference/runmetaanalysis) function in `metapsyTools`, which by default assumes a constant sampling correlation of $\rho$ = 0.6 (i.e., it is assumed that multiple effect sizes collected in the same study are correlated by _r_ = 0.6). 
+The **additional information** section at the bottom contains further links and information on the dataset. It also provides the link to the **R script** that was used to **simplify the data** for the online meta-analysis tool. Most datasets are simplified slightly to reduce the complexity of analyses within the app. A main step conducted in all simplification scripts is to **aggregate** all effect sizes within studies. This is done using the [`runMetaAnalysis`](https://tools.metapsy.org/reference/runmetaanalysis) function in `metapsyTools`, which by default assumes a constant sampling correlation of $\rho$ = 0.6 (i.e., it is assumed that multiple effect sizes collected in the same study are correlated by _r_ = 0.6). 
 
 {{< notice info >}}
 The aggregation is conducted on an **arm level**. This ensures that multiple treatment arms within the same trial are preserved in the provided data, and that differences can be analyzed in separate subgroup analyses. Please note that this approach may not fully remove effect size dependencies when there are multi-arm trials in the data (e.g., trials that compare two psychological treatments to the same control group). It may be advisable to conduct further sensitivity analyses (e.g. using [`metapsyTools`](/r-packages/r-packages/#metapsytools)) if a strict control for potential unit-of-analysis errors is desired. 

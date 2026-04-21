@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R Packages on The MetaCIH documentation</title>
+    <title>R Package on The MetaCIH documentation</title>
     <link>//localhost:1313/r-packages/r-packages/</link>
-    <description>Recent content in R Packages on The MetaCIH documentation</description>
+    <description>Recent content in R Package on The MetaCIH documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; &lt;script&gt;document.write(new Date().getFullYear())&lt;/script&gt; MetaCIH Collaboration</copyright>

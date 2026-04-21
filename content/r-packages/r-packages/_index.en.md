@@ -1,14 +1,14 @@
 +++
 keywords = []
-title = "R Packages"
+title = "R Package"
 weight = 1
 
 +++
 ***
 
-The MetaCIH infrastructure includes **one R package**: <!-- The first package, **`metapsyData`**, allows researchers to directly access all MetaCIH databases from an R environment. The second package, -->**`metapsyTools`** provides state-of-the-art meta-analysis functions that can be applied to databases without any prior preprocessing steps. <!--Collectively, these packages create an integrated meta-analysis workflow. --> Using the package: 
+The MetaCIH infrastructure includes **one R package**, <!-- The first package, **`metapsyData`**, allows researchers to directly access all MetaCIH databases from an R environment. The second package, -->**`metapsyTools`**, that provides state-of-the-art meta-analysis functions that can be applied to databases without any prior preprocessing steps. <!--Collectively, these packages create an integrated meta-analysis workflow. --> Using the package: 
 
-* 📥 the latest update or older versions of a database can be **downloaded**;
+<!--* 📥 the latest update or older versions of a database can be **downloaded**;-->
 * [👉](https://emojipedia.org/backhand-index-pointing-right/) databases can be **filtered** to address specific research questions;
 * [📊](https://emojipedia.org/bar-chart/) data can be **synthesized** using a variety of meta-analytic models;
 * [📈](https://emojipedia.org/chart-increasing/) meta-regression, small-study-effect and subgroup **analysis models** can be applied;
@@ -47,8 +47,9 @@ This final dataset then builds the basis for the **analysis** module. Researcher
 
 <!-- Databases downloaded into the R environment using `metapsyData` can be analyzed "out of the box" using the analysis module in `metapsyTools`. -->
 
-{{< notice info >}} <!-- Like `metapsyData`, -->The `metapsyTools` package has its own documentation page. You can find it [here](https://tools.metapsy.org/). {{</notice>}}
-
+{{% notice info %}}
+The `metapsyTools` package has its own documentation page. You can find it [here](https://tools.metapsy.org/).
+{{% /notice %}}
 
 <br>
 
