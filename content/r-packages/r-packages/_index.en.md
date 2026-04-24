@@ -1,6 +1,6 @@
 +++
 keywords = []
-title = "R Package"
+title = "R Packages"
 weight = 1
 
 +++
