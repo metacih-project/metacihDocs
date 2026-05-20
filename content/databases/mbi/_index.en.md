@@ -39,7 +39,7 @@ The online meta-analysis tool will be released soon.
 
 #### Metadata
 
-* <!-- <a href="https://data.metapsy.org" target="_blank">metapsyData</a> Shorthand: {{< zenodo-shorthand doi="10.5281/zenodo.20316297" >}} -->
+* Shorthand: {{< zenodo-shorthand doi="10.5281/zenodo.20316297" >}} 
 * Number of Studies: {{< zenodo-number-studies doi="10.5281/zenodo.20316297" >}}
 * Latest Version: {{< zenodo-version doi="10.5281/zenodo.20316297" >}}
 * Last updated: {{< zenodo-last-updated doi="10.5281/zenodo.20316297" >}}
@@ -98,8 +98,7 @@ The study flow of the `psychiatric-disorders-mbi` database can be found below.
 {{< zenodo-last-updated-year doi="10.5281/zenodo.20316297" >}}.
 <i>Database of mindfulness-based intervention trials for psychiatric disorders. Part of the MetaCIH project </i>
 (Version {{< zenodo-version doi="10.5281/zenodo.20316297" >}}).
-URL incandescent-fudge-873e299.netlify.app/databases/mbi/
-DOI {{< zenodo-doi doi="10.5281/zenodo.20316297" >}}.
+URL incandescent-fudge-873e299.netlify.app/databases/psychiatric-disorders-mbi. DOI {{< zenodo-doi doi="10.5281/zenodo.20316297" >}}.
 </div>
 
 <br>

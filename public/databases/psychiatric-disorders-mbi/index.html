@@ -460,8 +460,7 @@ The dataset follows the <a href="https://incandescent-fudge-873e299.netlify.app/
     <svg class="fill-current o-60 hover-accent-color-light" height="22px" style="margin-bottom: 0px;" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
         <path d="M0 0h24v24H0z" fill="none"/>
         <path fill="#878787" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4><ul>
-<li>
-<!-- <a href="https://data.metapsy.org" target="_blank">metapsyData</a> Shorthand: <span id="ph-shorthand"></span>
+<li>Shorthand: <span id="ph-shorthand"></span>
 
 <span id="spinner-ph-shorthand" class="loader-spinner"></span>
 <style>
@@ -503,7 +502,6 @@ async function renderShorthand() {
 
 renderShorthand();
 </script>
- -->
 </li>
 <li>Number of Studies: <span id="ph-number-studies"></span>
 
@@ -1380,8 +1378,7 @@ var randID=makeid(10);async function renderLastUpdatedYear(){for(;!isDataSaved()
 var randID=makeid(10);async function renderVersion(){for(;!isDataSaved();)console.log("waiting"),await new Promise(e=>setTimeout(e,1e3));var e=JSON.parse(sessionStorage.getItem("apiResponse")),n=!0;for(let t=0;t<e.length;t++){var r=e[t].conceptdoi?.toString()||"";if((r=JSON.stringify(r))===JSON.stringify("10.5281\/zenodo.20316297")&&!0===n){let i=e[t].metadata.version;latestVersion=document.createTextNode(i);for(let a=0;a<document.getElementsByClassName("spinner-ph-version").length;a++)document.getElementsByClassName("spinner-ph-version")[a].style.display="none";var s=document.getElementById("ph-version");s.id=s.id+"-"+randID,s.appendChild(latestVersion),n=!1}}}renderVersion();
 </script>
 ).
-URL incandescent-fudge-873e299.netlify.app/databases/mbi/
-DOI <span id="ph-doi"></span>
+URL incandescent-fudge-873e299.netlify.app/databases/psychiatric-disorders-mbi. DOI <span id="ph-doi"></span>
 
 <span id="spinner-ph-doi" class="loader-spinner"></span>
 <style>
