@@ -9,7 +9,9 @@
   </url><url>
     <loc>//localhost:1313/data-preparation/format/</loc>
   </url><url>
-    <loc>//localhost:1313/databases/mbi/</loc>
+    <loc>//localhost:1313/databases/depression-selfguided-psyctr/</loc>
+  </url><url>
+    <loc>//localhost:1313/databases/psychiatric-disorders-mbi/</loc>
   </url><url>
     <loc>//localhost:1313/r-packages/r-packages/</loc>
   </url><url>

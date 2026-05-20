@@ -2,7 +2,7 @@
 keywords: []
 title: "Mindfulness-based interventions for psychiatric disorders"
 weight: 1
-url: databases/mbi
+url: databases/psychiatric-disorders-mbi
 ---
 {{< zenodo-authors doi="10.5281/zenodo.20316297" >}}
 
@@ -90,7 +90,10 @@ The study flow of the `psychiatric-disorders-mbi` database can be found below.
 
 #### Citation
 
-<div class="citation" style='background-color: var(--body-color); padding: 20px 20px 20px 20px; font-size: 80%; -webkit-filter: grayscale(100%); filter: grayscale(100%);'>
+<div class="citation"  id="citation-psychiatric-disorders-mbi"  style='background-color: var(--body-color); padding: 20px 20px 20px 20px; font-size: 80%; -webkit-filter: grayscale(100%); filter: grayscale(100%); position: relative;'>
+<button class="citation-copy-btn" onclick="copyCitation('citation-psychiatric-disorders-mbi', this)" title="Copy citation to clipboard" style="position: absolute; top: 10px; right: 10px;">
+<i class="bi bi-clipboard" style="padding-top: 0.5rem;"></i>
+</button>
 {{< zenodo-authors doi="10.5281/zenodo.20316297" >}}
 {{< zenodo-last-updated-year doi="10.5281/zenodo.20316297" >}}.
 <i>Database of mindfulness-based intervention trials for psychiatric disorders. Part of the MetaCIH project </i>
