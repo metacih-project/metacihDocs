@@ -152,16 +152,28 @@ ul {
     font-size: 25px;
 }
 
-.bi-github:hover {
-    color: var(--dgps-boreal-dark) !important;
+#gh-logo,
+#gh-logo .bi-github {
+    color: #ffffff !important;
+}
+
+.bi-github:hover,
+#gh-logo:hover,
+#gh-logo:hover .bi-github {
+    color: rgba(255, 255, 255, 0.85) !important;
 }
 
 #gh-logo {
     margin-top: -10px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
 }
 
-#gh-logo.nav-item:hover {
-    color: var(--dgps-boreal-dark) !important;
+#gh-logo.nav-item:hover,
+#gh-logo:hover {
+    color: rgba(255, 255, 255, 0.85) !important;
 }
 
 ul .nav-item gh-logo-container.nav-item:hover {
