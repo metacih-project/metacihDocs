@@ -31,7 +31,7 @@ The **additional information** section at the bottom contains further links and 
 The aggregation is conducted on an **arm level**. This ensures that multiple treatment arms within the same trial are preserved in the provided data, and that differences can be analyzed in separate subgroup analyses. Please note that this approach may not fully remove effect size dependencies when there are multi-arm trials in the data (e.g., trials that compare two psychological treatments to the same control group). It may be advisable to conduct further sensitivity analyses (e.g. using [`metapsyTools`](/r-packages/r-packages/#metapsytools)) if a strict control for potential unit-of-analysis errors is desired. 
 {{</notice>}}
 
-In the footer, the starting page also provides a link to the [documentation entry](/databases) of the database; as well as a contact address in case the application does not function as intended.
+In the footer, the starting page also provides a link to the [documentation entry](/evidence-collections) of the evidence collection; as well as a contact address in case the application does not function as intended.
 
 The green "circle arrow" button in the top-right can be used to re-load the application. Please note that this removes previous results obtained using the tool. The reload button is available on all pages of the application. 
 
@@ -42,12 +42,12 @@ The green "circle arrow" button in the top-right can be used to re-load the appl
 
 The **data selection pane** can be opened by clicking the "Starting Analyzing" button. This page shows a table of the provided data, along with the calculated effect sizes (expressed as Hedges' _g_) and their estimated sampling variances.
 
-The right sidebar provides a selection of buttons and sliders that can be used to **filter the database** as needed. To open a filter, one has to click the "**+**" sign to the right of each provided variable. The blue box at the end of the sidebar can be used to **exclude specific studies** within the database. 
+The right sidebar provides a selection of buttons and sliders that can be used to **filter the evidence collection** as needed. To open a filter, one has to click the "**+**" sign to the right of each provided variable. The blue box at the end of the sidebar can be used to **exclude specific studies** within the evidence collection. 
 
 <img src="/uploads/app-2.webp" width="250" style="box-shadow: 0px 0px 10px gray;">
 <br>
 
-Once the desired filters have been selected, the **<i class="bi bi-card-list"></i> Update Table** button must be clicked to filter the database. The displayed table is then re-rendered and will only contain the studies fulfilling the selected criteria. A line at the very end of the table can be helpful to see how many effect sizes can be pooled using the current filters.
+Once the desired filters have been selected, the **<i class="bi bi-card-list"></i> Update Table** button must be clicked to filter the evidence collection. The displayed table is then re-rendered and will only contain the studies fulfilling the selected criteria. A line at the very end of the table can be helpful to see how many effect sizes can be pooled using the current filters.
 
 {{< notice tip >}}
 Before running the meta-analysis, please make sure to **always** click on "Update Table" first. Otherwise, your selected filtering criteria will not be implemented by the application.
@@ -128,7 +128,7 @@ The right side of the section shows a **_P_-curve**. If there is a true effect a
 
 ##### Risk of Bias
 
-This section displays a summary plot of the **risk of bias judgments** for all included studies. It also gives the number and percentage of studies with an overall low risk of bias, and high risk of bias. Please note that the type of risk of bias rating applied in each database varies, as does the version of the RoB tool (version 1 or 2). Further details are provided in the [documentation entry](/databases) of each database. 
+If available, this section displays a summary plot of the **risk of bias judgments** for all included studies. It also gives the number and percentage of studies with an overall low risk of bias, and high risk of bias. Please note that the type of risk of bias rating applied in each evidence collection varies, as does the version of the RoB tool (version 1 or 2). Further details are provided in the [documentation entry](/evidence-collections) of each evidence collection. 
 
 <br>
 <img src="/uploads/app-8.webp" width="400" style="box-shadow: 0px 0px 10px gray;">
@@ -148,7 +148,7 @@ By default, meta-regressions and subgroup analyses are presented for all variabl
 
 In this section on top of the results pane, it is possible to change the **settings of the analysis**. First, it is possible to change the **estimator of the between-study heterogeneity variance τ<sup>2</sup>**. Many different estimators are available, and which of them shows the best performance in specific settings is an ongoing research question (Langan et al., [2019](https://onlinelibrary.wiley.com/doi/full/10.1002/jrsm.1316)).
 
-In most applications, the **restricted maximum likelihood (REML)** estimator is used by default. This is also the default estimator used in common meta-analysis packages, such as `metafor` or `meta`. For some applications, this default setting is changed to another estimator (e.g., the Paule-Mandel estimator) to reflect the specific type of data included in a database. It is also possible to run a common/fixed-effect model instead, in which τ<sup>2</sup> is fixed to zero.
+In most applications, the **restricted maximum likelihood (REML)** estimator is used by default. This is also the default estimator used in common meta-analysis packages, such as `metafor` or `meta`. For some applications, this default setting is changed to another estimator (e.g., the Paule-Mandel estimator) to reflect the specific type of data included in an evidence collection . It is also possible to run a common/fixed-effect model instead, in which τ<sup>2</sup> is fixed to zero.
 
 By default, the **Knapp-Hartung adjustment** is applied for random-effects meta-analyses (see e.g. Hartung & Knapp, [2001](https://onlinelibrary.wiley.com/doi/abs/10.1002/sim.1009)). This correction does not apply to common/fixed-effect models. There can be **rare cases** when this correction leads to **anticonservative results** (Jackson et al., [2017](https://onlinelibrary.wiley.com/doi/full/10.1002/sim.7411)), so it can be helpful to re-run the model without the correction to check for this. To do this, one has to uncheck the "Use Knapp-Hartung-Adjustments" checkbox, and then click on <i class="fa-solid fa-chart-line"></i> **Re-run Meta-Analysis**. The re-run button also has to be clicked first when another τ<sup>2</sup> is to be used.
 
@@ -163,15 +163,16 @@ Each generated report is provided with a distinct **tracking ID**, and the **dat
 
 <br>
 
-
+<!-- 
 <br>
 
 #### Effect Explorer
 ***
 
+
 A special meta-analysis application is the **[Metapsy effect explorer](https://www.metapsy.org/database/explore)**. This application has been developed for a **broader audience** and therefore provides **less technical details** than the "standard" online meta-analysis tools. The effect explorer allows to examine the **pooled response rates** and **relative "risk" of response** of psychotherapies for **eight mental disorders** (Depression, Borderline Personality Disorder, Generalized Anxiety Disorder, Obsessive Compulsive Disorder, Panic Disorder, Post-Traumatic Stress Disorder, Social Anxiety Disorder, Specific Phobia).
 
-Like the other meta-analysis tools, this application also allows to generate a **reproducible report** of the results. This report also provides a more detailed **technical description** of the results and applied methodology. The underlying "meta-dataset" has been versioned and released with [Zenodo](https://zenodo.org/records/8408318). 
+Like the other meta-analysis tools, this application also allows to generate a **reproducible report** of the results. This report also provides a more detailed **technical description** of the results and applied methodology. The underlying "meta-dataset" has been versioned and released with [Zenodo](https://zenodo.org/records/8408318). -->
 
 
 

@@ -56,7 +56,7 @@ contact_form_action = "#" # contact form works with : https://formspree.io
 # [[params.social]]
 # icon = "ti-github" # themify icon pack : https://themify.me/themify-icons
 # name = "Github"
-# link = "https://github.com/metapsy-project"
+# link = "https://github.com/metacih-project"
   
 # [[params.social]]
 # icon = "ti-linkedin" # themify icon pack : https://themify.me/themify-icons
@@ -110,8 +110,8 @@ url = "meta-analysis-tool/"
 
   [[Languages.en.menu.main]]
   parent = "Topics"
-  name = "Databases"
-  url = "databases/"
+  name = "Evidence collections"
+  url = "evidence-collections/"
   weight = 2
   
    [[Languages.en.menu.main]]

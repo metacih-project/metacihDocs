@@ -186,7 +186,7 @@
             
             <a class="dropdown-item" href="//localhost:1313/general/">General Information</a>
             
-            <a class="dropdown-item" href="//localhost:1313/databases/">Databases</a>
+            <a class="dropdown-item" href="//localhost:1313/evidence-collections/">Evidence collections</a>
             
             <a class="dropdown-item" href="//localhost:1313/data-preparation/">Data Preparation</a>
             
@@ -200,6 +200,16 @@
         </li>
         
         
+        <li class="nav-item" id="gh-logo-container">
+          <a class="nav-link text-dark" id="gh-logo" href="https://github.com/metacih-project" target="_blank" rel="noopener noreferrer" aria-label="MetaCIH on GitHub">
+            <i class="bi-github" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item" id="mode-switch">
+          <a href="#" class="nav-link text-dark" onclick="toggleTheme(); return false;" id="mode-switch-inner" aria-label="Toggle theme">
+            <i id="theme-icon" class="bi-brightness-high" style="font-size: 140%; color: white; transition: all 0.3s ease; vertical-align: middle;"></i>
+          </a>
+        </li>
       </ul>
       
     </div>
@@ -276,13 +286,13 @@
  
  
 <li
-  data-nav-id="//localhost:1313/databases/"
-  title="Databases"
+  data-nav-id="//localhost:1313/evidence-collections/"
+  title="Evidence Collections"
   class="sidelist
   "
 >
-  <a href="//localhost:1313/databases/">
-    Databases
+  <a href="//localhost:1313/evidence-collections/">
+    Evidence Collections
   </a>
      
 </li>
@@ -385,16 +395,16 @@
         <path fill="#878787" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4><hr>
 <p>MetaCIH is an open project. If you want to join the MetaCIH project, please contact <a href="https://sites.brown.edu/mheal/team/#nikole">Nikole Giovannone</a>. For example, it is possible to contribute to:</p>
 <ul>
-<li>the development and update of new or existing databases included in the project;</li>
+<li>the development and update of new or existing evidence collections included in the project;</li>
 <li>the meta-analytic software included in the MetaCIH infrastructure (e.g., the online meta-analysis tool or the companion R packages);</li>
 <li>new functionalities that can be integrated into the MetaCIH workflow. <br>
 <br></li>
 </ul>
-<p>If you want to add an existing meta-analytic database to MetaCIH, we can assist you by:</p>
+<p>If you want to add an existing meta-analytic evidence collections to MetaCIH, we can assist you by:</p>
 <ul>
 <li>harmonizing the data into a consistent format used across meta-analytic research domains;</li>
-<li>storing, documenting, publishing, and versioning your database in a FAIR-complaint way</li>
-<li>making your database more visible and accessible to the public via integration in our online meta-analysis tool.</li>
+<li>storing, documenting, publishing, and versioning your evidence collection in a FAIR-complaint way</li>
+<li>making your evidence collection more visible and accessible to the public via integration in our online meta-analysis tool.</li>
 </ul>
 <p><br></br></p>
 </div>
@@ -421,7 +431,7 @@
  
 <footer class="section pb-4">
   
-  <script src="/costum.min.js"></script>
+  <script src="/costum.min.js?v=20260616"></script>
   <div class="container">
     <div
       class="row align-items-center"

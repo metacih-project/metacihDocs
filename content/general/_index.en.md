@@ -23,7 +23,7 @@ keywords:
 ***
 [MetaCIH](https://sites.brown.edu/mheal/metacih/) is a research project led by Prof. [Shufang Sun](https://vivo.brown.edu/display/ssun33), Prof. [Simon Goldberg](https://counselingpsych.education.wisc.edu/fac-staff/goldberg-simon/), and Prof. [Eric Loucks](https://vivo.brown.edu/display/eloucks) at Brown University and the University of Wisconsin-Madison, funded by the National Center for Complementary and Integrative Health of the National Institutes of Health (NIH NCCIH; Project number: [1R24AT012845-01](https://reporter.nih.gov/search/yTDxli1e7USBJzyRXpYPkw/project-details/10917638)).
 
-The overarching goal of the MetaCIH initiative is to provide **access to meta-analytic databases of clinical trials** investigating the effect of **complementary and integrative health (CIH) interventions** (e.g., mindfulness, yoga, tai chi, acupuncture, and chiropractic care) on **various outcome areas** (e.g., pain, psychiatric symptoms). 
+The overarching goal of the MetaCIH initiative is to provide **access to meta-analytic evidence collections of clinical trials** investigating the effect of **complementary and integrative health (CIH) interventions** (e.g., mindfulness, yoga, tai chi, acupuncture, and chiropractic care) on **various outcome areas** (e.g., pain, psychiatric symptoms). 
 
 More specific goals of MetaCIH are to:  
 - <i class="bi bi-stack"></i> curate a **living data repository** to drive high-quality evidence synthesis to advance the science of CIH research,
@@ -36,23 +36,23 @@ More specific goals of MetaCIH are to:
 
 ***
 
-[MetaCIH](https://sites.brown.edu/mheal/metacih/) is a project developed in close collaboration with the [Metapsy initiative](https://www.metapsy.org/). Metapsy is led by [Prof. Pim Cuijpers](https://www.pimcuijpers.com/blog/) at Vrije Universiteit Amsterdam and is the first initiative in psychotherapy research to provide open access to meta-analytic databases of clinical trials examining the effects of psychological interventions (e.g., psychotherapy, preventive interventions, and psychoeducation) on a broad range of mental disorders and mental health problems. These databases have been developed over the past decades by university-based researchers. 
+[MetaCIH](https://sites.brown.edu/mheal/metacih/) is a project developed in close collaboration with the [Metapsy initiative](https://www.metapsy.org/). Metapsy is led by [Prof. Pim Cuijpers](https://www.pimcuijpers.com/blog/) at Vrije Universiteit Amsterdam and is the first initiative in psychotherapy research to provide open access to meta-analytic evidence collections of clinical trials examining the effects of psychological interventions (e.g., psychotherapy, preventive interventions, and psychoeducation) on a broad range of mental disorders and mental health problems. These evidence collections have been developed over the past decades by university-based researchers. 
 
 The Metapsy Initiative supports the development of the technical infrastructure for MetaCIH. For this reason, both the data and the website are hosted on Metapsy’s servers. A comprehensive overview of the Metapsy infrastructure is provided in [Harrer et al. (2025)](https://research.vu.nl/en/publications/effectiveness-of-psychotherapy-synthesis-of-a-meta-analytic-resea/).
 
 
 <br>
 
-#### A Unified Framework of Meta-Analytic Databases
+#### A Unified Framework of Meta-Analytic Evidence Collections
 
 ***
 
-MetaCIH aims to provide a unified framework for all available meta-analytic data across different populations, interventions, comparisons, and outcomes. All meta-analytic databases...
+MetaCIH aims to provide a unified framework for all available meta-analytic data across different populations, interventions, comparisons, and outcomes. All meta-analytic evidence collections...
 
 * ... are created by university-based research teams using state-of-the-art methodology.
 * ... are updated regularly.
 * ... are formatted using an [identical and transparent coding scheme](/data-preparation/format/).
-* ... receive extensive [documentation](/databases/) and [metadata](/data-preparation/metadata/), including [versioning](/release/#versioning) and persistent [data identifiers](/databases/#digital-object-identifier) (DOIs), following the [FAIR principles](https://www.go-fair.org/fair-principles/).
+* ... receive extensive [documentation of evidence collections](/evidence-collections/) and [metadata](/data-preparation/metadata/), including [versioning](/release/#versioning) and persistent [data identifiers](/evidence-collections/#digital-object-identifier) (DOIs), following the [FAIR principles](https://www.go-fair.org/fair-principles/).
 * ... are made [publically available](/release/) via data repositories (Github, Zenodo). <!--Researchers can also easily access the databases using the designated R package [`metapsyData`](https://data.metapsy.org).  -->
 * ... can be analyzed using state-of-the-art meta-analytic methods, either using the [`metapsyTools`](https://tools.metapsy.org) R package or using an [Online Meta-Analysis Tool](/meta-analysis-tool/).
 

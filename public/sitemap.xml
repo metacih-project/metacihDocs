@@ -9,11 +9,11 @@
   </url><url>
     <loc>//localhost:1313/data-preparation/format/</loc>
   </url><url>
-    <loc>//localhost:1313/databases/psychiatric-disorders-mbi/</loc>
+    <loc>//localhost:1313/evidence-collections/psychiatric-disorders-mbi/</loc>
   </url><url>
     <loc>//localhost:1313/r-packages/r-packages/</loc>
   </url><url>
-    <loc>//localhost:1313/databases/</loc>
+    <loc>//localhost:1313/evidence-collections/</loc>
     <lastmod>2018-12-29T11:02:05+06:00</lastmod>
   </url><url>
     <loc>//localhost:1313/r-packages/api/</loc>
@@ -43,7 +43,7 @@
   </url><url>
     <loc>//localhost:1313/categories/</loc>
   </url><url>
-    <loc>//localhost:1313/databases/mbi/adm-ipd-v1.0-0/</loc>
+    <loc>//localhost:1313/evidence-collections/mbi/adm-ipd-v1.0-0/</loc>
   </url><url>
     <loc>//localhost:1313/tags/</loc>
   </url>

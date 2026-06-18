@@ -11,9 +11,9 @@ weight: 1
 ---
 - - -
 
-All released MetaCIH databases follow a uniform data formatting standard. This includes both the meta-analytic datasets per se, as well as the meta-data provided for the data. Database repositories themselves also follow a predefined folder structure.
+All released MetaCIH evidence collections follow a uniform data formatting standard. This includes both the meta-analytic datasets per se, as well as the meta-data provided for the data. Repositories themselves also follow a predefined folder structure.
 
-All database objects (datasets, metadata) are provided in a **machine-readable format** (.csv, .json, .txt). This ensures interoperability with other MetaCIH software components (e.g. the automatized [database documentation](/databases), the [MetaCIH API](/r-packages/api/)), as well as external software and programming languages in general.
+All objects of an evidence collection (datasets, metadata) are provided in a **machine-readable format** (.csv, .json, .txt). This ensures interoperability with other MetaCIH software components (e.g. the automatized [documentation](/evidence-collections), the [MetaCIH API](/r-packages/api/)), as well as external software and programming languages in general.
 
 Collectively, we refer to this set of data formatting and storage rules as the **MetaCIH data standard**.
 
@@ -27,15 +27,15 @@ An example repository following the MetaCIH data standard can be found [here](ht
 
 - - -
 
-As part of the release, larger databases are typically first partitioned into smaller **"scientific use files"** (SUFs) that concentrate on a particular research field (e.g., all trials that compared meditation-based interventions with control groups). These SUFs are always provided as "rectangular", **wide-format** datasets.
+As part of the release, larger evidence collections are typically first partitioned into smaller **"scientific use files"** (SUFs) that concentrate on a particular research field (e.g., all trials that compared meditation-based interventions with control groups). These SUFs are always provided as "rectangular", **wide-format** datasets.
 
 This means that each row in a dataset corresponds with the results of one trial arm comparison (e.g. cognitive-behavioral therapy versus waitlist) in one study.
 
-MetaCIH databases only contain evidence from randomized-controlled trials (RCTs). If an RCT only contained two groups and only one relevant outcome, this means that the trial will only contribute one row to the dataset.
+MetaCIH evidence collections only contain evidence from randomized-controlled trials (RCTs). If an RCT only contained two groups and only one relevant outcome, this means that the trial will only contribute one row to the dataset.
 
-It is also possible for RCTs included in a database to provide more than one row; for example because the study was a **multi-arm trial**. In a multi-arm trial with $a$ arms, there are $\frac{a!}{2!(a-2)!}$ unique trial arm comparisons. Therefore, typically, there will be one row for each unique trial arm comparison included in the data.
+It is also possible for RCTs included in an evidence collection to provide more than one row; for example because the study was a **multi-arm trial**. In a multi-arm trial with $a$ arms, there are $\frac{a!}{2!(a-2)!}$ unique trial arm comparisons. Therefore, typically, there will be one row for each unique trial arm comparison included in the data.
 
-It is also possible that one trial included more than one relevant outcome. In this case, one trial also provides more than one row in the database, with each row representing the results for a different outcome.
+It is also possible that one trial included more than one relevant outcome. In this case, one trial also provides more than one row in the evidence collection, with each row representing the results for a different outcome.
 
 <br>
 
@@ -43,9 +43,9 @@ It is also possible that one trial included more than one relevant outcome. In t
 
 - - -
 
-There are several variables which are included in every MetaCIH database. These variables are required, for example, to **uniquely identify** each comparison. They are also necessary to run meta-analyses of the databases later on (e.g. using [`metapsyTools`](https://tools.metapsy.org); in particular, the variable information below allows to calculate variance-covariance matrices that approximate the dependence structure in the data).
+There are several variables which are included in every MetaCIH evidence collection. These variables are required, for example, to **uniquely identify** each comparison. They are also necessary to run meta-analyses of the evidence collections later on (e.g. using [`metapsyTools`](https://tools.metapsy.org); in particular, the variable information below allows to calculate variance-covariance matrices that approximate the dependence structure in the data).
 
-We differentiate between standard (I.) study design, (II.) effect size data, and (III.) `metapsyTools` variables. Apart from these standard variables, additional (often database-specific) variables are included.
+We differentiate between standard (I.) study design, (II.) effect size data, and (III.) `metapsyTools` variables. Apart from these standard variables, additional (often specific to each evidence collection) variables are included.
 
 <br>
 
@@ -71,7 +71,7 @@ We differentiate between standard (I.) study design, (II.) effect size data, and
 
 - - -
 
-Each Metapsy database also contains variables in which the (raw or pre-calculated) effect size data is stored. In each row, one of the following variable groups (a) to (e) is specified, depending on the type of outcome data reported in the paper. The rest of the variable groups will contain `NA` in that row.
+Each MetaCIH evidence collection also contains variables in which the (raw or pre-calculated) effect size data is stored. In each row, one of the following variable groups (a) to (e) is specified, depending on the type of outcome data reported in the paper. The rest of the variable groups will contain `NA` in that row.
 
 <br>
 
@@ -124,7 +124,7 @@ Each Metapsy database also contains variables in which the (raw or pre-calculate
 
 - - -
 
-The Metapsy database standard includes nine additional variables that all start with a dot (`.`). These are variables created by the [`calculateEffectSizes`](https://tools.metapsy.org/reference/calculateeffectsizes) function in `metapsyTools`, or the [data validator application](https://tools.metapsy.org/data-validator). They are included so that meta-analysis functions in `metapsyTools` can be applied "out of the box".
+The Metapsy data standard includes nine additional variables that all start with a dot (`.`). These are variables created by the [`calculateEffectSizes`](https://tools.metapsy.org/reference/calculateeffectsizes) function in `metapsyTools`, or the [data validator application](https://tools.metapsy.org/data-validator). They are included so that meta-analysis functions in `metapsyTools` can be applied "out of the box".
 
 * **`.id`**: Unique identifier for a trial arm comparison/row.
 * **`.g`**: Calculated effect size (Hedges' $g$).
@@ -142,7 +142,7 @@ The Metapsy database standard includes nine additional variables that all start 
 
 - - -
 
-MetaCIH databases also contain additional variables. These are used, for example, to collect subject-specific information that is not relevant for all indications. Nevertheless, there are several formatting rules that all variables/columns follow:
+MetaCIH evidence collections also contain additional variables. These are used, for example, to collect subject-specific information that is not relevant for all indications. Nevertheless, there are several formatting rules that all variables/columns follow:
 
 * <strong style="color: green;">✓</strong> All variable names are in [`snake_case`](https://en.wikipedia.org/wiki/Snake_case?oldformat=true).
 * <strong style="color: green;">✓</strong> Variable names start with a standard letter (`_` is not allowed, `.` is only allowed for `metapsyTools` variables).

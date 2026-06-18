@@ -186,7 +186,7 @@
             
             <a class="dropdown-item" href="//localhost:1313/general/">General Information</a>
             
-            <a class="dropdown-item" href="//localhost:1313/databases/">Databases</a>
+            <a class="dropdown-item" href="//localhost:1313/evidence-collections/">Evidence collections</a>
             
             <a class="dropdown-item" href="//localhost:1313/data-preparation/">Data Preparation</a>
             
@@ -200,6 +200,16 @@
         </li>
         
         
+        <li class="nav-item" id="gh-logo-container">
+          <a class="nav-link text-dark" id="gh-logo" href="https://github.com/metacih-project" target="_blank" rel="noopener noreferrer" aria-label="MetaCIH on GitHub">
+            <i class="bi-github" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item" id="mode-switch">
+          <a href="#" class="nav-link text-dark" onclick="toggleTheme(); return false;" id="mode-switch-inner" aria-label="Toggle theme">
+            <i id="theme-icon" class="bi-brightness-high" style="font-size: 140%; color: white; transition: all 0.3s ease; vertical-align: middle;"></i>
+          </a>
+        </li>
       </ul>
       
     </div>
@@ -244,13 +254,13 @@
  
  
 <li
-  data-nav-id="//localhost:1313/databases/"
-  title="Databases"
+  data-nav-id="//localhost:1313/evidence-collections/"
+  title="Evidence Collections"
   class="sidelist
   "
 >
-  <a href="//localhost:1313/databases/">
-    Databases
+  <a href="//localhost:1313/evidence-collections/">
+    Evidence Collections
   </a>
      
 </li>
@@ -369,7 +379,7 @@
           <h2 class="mb-5" id="title">Metadata</h2>
           
           <div class="content"><hr>
-<p>Next to the actual data file, each Metapsy database repository also contains a <strong>folder</strong> in which <strong>metadata</strong> is stored. Metadata items may vary between repositories, but a core selection of files is always included. We focus on these metadata items here.</p>
+<p>Next to the actual data file, each MetaCIH repository of an evidence collection also contains a <strong>folder</strong> in which <strong>metadata</strong> is stored. Metadata items may vary between repositories, but a core selection of files is always included. We focus on these metadata items here.</p>
 
 
 <div class="notices tip" ><p>An example of a metadata repository folder can be found <a href="https://github.com/metapsy-project/data-template/tree/master/metadata">here</a>.</p></div>
@@ -419,7 +429,7 @@
  
 <footer class="section pb-4">
   
-  <script src="/costum.min.js"></script>
+  <script src="/costum.min.js?v=20260616"></script>
   <div class="container">
     <div
       class="row align-items-center"

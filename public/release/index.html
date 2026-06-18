@@ -142,15 +142,15 @@
   <meta name="twitter:title" content="Data Release" />
   <meta
     name="twitter:description"
-    content="Documentation of the database release &amp; versioning workflow"
+    content="Documentation of the release of evidence collections &amp; versioning workflow"
   />
     <meta property="og:title" content="Data Release" />
-<meta property="og:description" content="Documentation of the database release &amp; versioning workflow" />
+<meta property="og:description" content="Documentation of the release of evidence collections &amp; versioning workflow" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="//localhost:1313/release/" />
 
  <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Data Release"/>
-<meta name="twitter:description" content="Documentation of the database release &amp; versioning workflow"/>
+<meta name="twitter:description" content="Documentation of the release of evidence collections &amp; versioning workflow"/>
 
 </head>
 
@@ -186,7 +186,7 @@
             
             <a class="dropdown-item" href="//localhost:1313/general/">General Information</a>
             
-            <a class="dropdown-item" href="//localhost:1313/databases/">Databases</a>
+            <a class="dropdown-item" href="//localhost:1313/evidence-collections/">Evidence collections</a>
             
             <a class="dropdown-item" href="//localhost:1313/data-preparation/">Data Preparation</a>
             
@@ -200,6 +200,16 @@
         </li>
         
         
+        <li class="nav-item" id="gh-logo-container">
+          <a class="nav-link text-dark" id="gh-logo" href="https://github.com/metacih-project" target="_blank" rel="noopener noreferrer" aria-label="MetaCIH on GitHub">
+            <i class="bi-github" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item" id="mode-switch">
+          <a href="#" class="nav-link text-dark" onclick="toggleTheme(); return false;" id="mode-switch-inner" aria-label="Toggle theme">
+            <i id="theme-icon" class="bi-brightness-high" style="font-size: 140%; color: white; transition: all 0.3s ease; vertical-align: middle;"></i>
+          </a>
+        </li>
       </ul>
       
     </div>
@@ -244,13 +254,13 @@
  
  
 <li
-  data-nav-id="//localhost:1313/databases/"
-  title="Databases"
+  data-nav-id="//localhost:1313/evidence-collections/"
+  title="Evidence Collections"
   class="sidelist
   "
 >
-  <a href="//localhost:1313/databases/">
-    Databases
+  <a href="//localhost:1313/evidence-collections/">
+    Evidence Collections
   </a>
      
 </li>
@@ -323,7 +333,7 @@
           <h2 class="mb-5" id="title">Data Release</h2>
           
           <div class="content"><hr>
-<p>Once uploaded to a Github repository, databases are officially released from the <code>master</code>/<code>main</code> branch.</p>
+<p>Once uploaded to a Github repository, evidence collections are officially released from the <code>master</code>/<code>main</code> branch.</p>
 <p><img src="/uploads/releases.png"></p>
 <br>
 <h4 id="versioning">Versioning Convention <a class="header-link" href="#versioning">
@@ -335,23 +345,23 @@
 <p><strong><code>MAJOR.MINOR.PATCH</code></strong></p>
 </center>
 <ul>
-<li>The <strong><code>MAJOR</code></strong> number is used for actual updates of databases (i.e. new searches that lead to new studies being added to the database). Since most databases are updated yearly, this number refers to the last two digits of the year in which the search was conducted (e.g. <code>22</code> if the search was conducted in 2022). If multiple searches were conducted in one year, the <code>MINOR</code> number is used to differentiate the versions.</li>
-<li>The <strong><code>MINOR</code></strong> number is used for all changes that affect the data (or metadata) of a database; especially changes that were made while the last study search stays the same. For example, this can be additions to the metadata of a database, or changes and corrections in the extracted meta-analytic data. This part of the version number always starts with <code>0</code>, and then goes up from there.</li>
-<li>The <strong><code>PATCH</code></strong> number is for minor bug fixes or corrections; for example typo corrections in release notes. Patch number changes mean that the database is still &ldquo;backward-compatible&rdquo;, meaning that values obtained by analyzing this database will still the identical. This part of the version number also always starts with <code>0</code>.</li>
+<li>The <strong><code>MAJOR</code></strong> number is used for actual updates of evidence collections (i.e. new searches that lead to new studies being added to the evidence collection). Since most evidence collections are updated yearly, this number refers to the last two digits of the year in which the search was conducted (e.g. <code>25</code> if the search was conducted in 2025). If multiple searches were conducted in one year, the <code>MINOR</code> number is used to differentiate the versions.</li>
+<li>The <strong><code>MINOR</code></strong> number is used for all changes that affect the data (or metadata) of an evidence collection; especially changes that were made while the last study search stays the same. For example, this can be additions to the metadata of an evidence collection, or changes and corrections in the extracted meta-analytic data. This part of the version number always starts with <code>0</code>, and then goes up from there.</li>
+<li>The <strong><code>PATCH</code></strong> number is for minor bug fixes or corrections; for example typo corrections in release notes. Patch number changes mean that the evidence collection is still &ldquo;backward-compatible&rdquo;, meaning that values obtained by analyzing this evidence collection will still the identical. This part of the version number also always starts with <code>0</code>.</li>
 </ul>
-<p>Therefore, if a database was updated (via a new search) in 2023, the first release version number would be <code>23.0.0</code>. If many additions were made some time after than, the new version number changes to <code>23.1.0</code>. If typos are fixed in this version, the new version number is <code>23.1.1</code>, and so forth.</p>
+<p>Therefore, if an evidence collection was updated (via a new search) in 2026, the first release version number would be <code>26.0.0</code>. If many additions were made some time after than, the new version number changes to <code>26.1.0</code>. If typos are fixed in this version, the new version number is <code>26.1.1</code>, and so forth.</p>
 <br>
 <h4 id="zenodo">Zenodo Integration <a class="header-link" href="#zenodo">
     <svg class="fill-current o-60 hover-accent-color-light" height="22px" style="margin-bottom: 0px;" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
         <path d="M0 0h24v24H0z" fill="none"/>
         <path fill="#878787" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a></h4><hr>
-<p>Using a Github integration, all releases are automatically indexed in <a href="https://zenodo.org/">Zenodo</a>. Zenodo automatically issues a Digital Object Identifier (DOI) for the latest release. For each database, there are two types of DOIs:</p>
+<p>Using a Github integration, all releases are automatically indexed in <a href="https://zenodo.org/">Zenodo</a>. Zenodo automatically issues a Digital Object Identifier (DOI) for the latest release. For each evidence collection, there are two types of DOIs:</p>
 <ul>
-<li><strong>Database DOI</strong>. The Zenodo system refers to this as the &ldquo;concept identifier&rdquo;. It is an overall DOI for all versions of the database that will always resolve to the latest version.</li>
-<li><strong>Version DOI</strong>. This is a version-specific DOI that allows referencing specific states of the database in the past.</li>
+<li><strong>Evidence Collection DOI</strong>. The Zenodo system refers to this as the &ldquo;concept identifier&rdquo;. It is an overall DOI for all versions of the evidence collection that will always resolve to the latest version.</li>
+<li><strong>Version DOI</strong>. This is a version-specific DOI that allows referencing specific states of the evidence collection in the past.</li>
 </ul>
 <img src="/uploads/release-flow.png" width="100%" style="border-radius: 5px; border: 3px solid white; margin-top: 30px; margin-bottom: 30px;">
-<p>Once indexed in Zenodo, the released database and its metadata is automatically propagated to other components of the MetaCIH infrastructure, including the <a href="/databases/">database documentation entry</a> and the <a href="/r-packages/api/">MetaCIH API</a>. This means that the new database version is publicly available to the entire research community. Preferred citations included in each database documentation entry are also automatically updated to reflect the year and version of the new release. This process is partially handled via the <a href="https://developers.zenodo.org/">Zenodo REST API</a>.</p>
+<p>Once indexed in Zenodo, the released evidence collection and its metadata is automatically propagated to other components of the MetaCIH infrastructure, including the <a href="/evidence-collections/">documentation entry</a> and the <a href="/r-packages/api/">MetaCIH API</a>. This means that the new version of the evidence collection is publicly available to the entire research community. Preferred citations included in each documentation entry of an evidence collection are also automatically updated to reflect the year and version of the new release. This process is partially handled via the <a href="https://developers.zenodo.org/">Zenodo REST API</a>.</p>
 <p><br></br></p>
 </div>
           
@@ -377,7 +387,7 @@
  
 <footer class="section pb-4">
   
-  <script src="/costum.min.js"></script>
+  <script src="/costum.min.js?v=20260616"></script>
   <div class="container">
     <div
       class="row align-items-center"

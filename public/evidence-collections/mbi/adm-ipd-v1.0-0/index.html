@@ -2,10 +2,10 @@
 <html lang="en-us">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
-  <title>Categories</title>
+  <title>References of studies excluded based on full-text screening</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="generator" content="Hugo 0.123.0">
-  <meta name="description" content="Categories - The MetaCIH documentation " />
+  <meta name="description" content="References of studies excluded based on full-text screening - The MetaCIH documentation " />
 
   
   <link
@@ -139,18 +139,20 @@
     content="image/png"
   />
   
-  <meta name="twitter:title" content="Categories" />
+  <meta name="twitter:title" content="References of studies excluded based on full-text screening" />
   <meta
     name="twitter:description"
-    content="The MetaCIH documentation"
+    content="Documentation of the database release &amp; versioning workflow"
   />
-    <meta property="og:title" content="Categories" />
-<meta property="og:description" content="The MetaCIH documentation" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="//localhost:1313/categories/" />
+    <meta property="og:title" content="References of studies excluded based on full-text screening" />
+<meta property="og:description" content="Documentation of the database release &amp; versioning workflow" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//localhost:1313/evidence-collections/mbi/adm-ipd-v1.0-0/" /><meta property="article:section" content="evidence-collections" />
 
- <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Categories"/>
-<meta name="twitter:description" content="The MetaCIH documentation"/>
+
+
+ <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="References of studies excluded based on full-text screening"/>
+<meta name="twitter:description" content="Documentation of the database release &amp; versioning workflow"/>
 
 </head>
 
@@ -262,7 +264,25 @@
   <a href="//localhost:1313/evidence-collections/">
     Evidence Collections
   </a>
+    
+  <ul>
+           
+ 
+ 
+<li
+  data-nav-id="//localhost:1313/evidence-collections/psychiatric-disorders-mbi/"
+  title="Mindfulness-based interventions for psychiatric disorders"
+  class="sidelist
+  "
+>
+  <a href="//localhost:1313/evidence-collections/psychiatric-disorders-mbi/">
+    Mindfulness-based interventions for psychiatric disorders
+  </a>
      
+</li>
+   
+  </ul>
+   
 </li>
   
                  
@@ -324,33 +344,101 @@
   </a>
    
 </li>
-   
+     
           </ul>
         </div>
       </div>
       <div class="col-lg-9">
         <div class="p-lg-5 p-4 bg-white" id="content">
-          <h2 class="mb-5" id="title">Categories</h2>
+          <h2 class="mb-5" id="title">References of studies excluded based on full-text screening</h2>
           
-          <div class="bg-light p-4">
-            <ul class="page-list">
-                   
- 
- 
-<li
-  data-nav-id="//localhost:1313/categories/"
-  title="Categories"
-  class="sidelist
-  active"
->
-  <a href="//localhost:1313/categories/">
-    Categories
-  </a>
-   
-</li>
- 
-            </ul>
-          </div>
+          <div class="content"><hr>
+<style>
+body > section > div > div > div.col-lg-3 {
+    display: none !important;
+}
+</style>
+<ul>
+<li>📄 <strong>Manuscript/Project:</strong> &ldquo;Modifiers in Effects of Combined Pharmacotherapy and Psychotherapy versus Pharmacotherapy Alone for Adult Depression: An Individual Participant Data Meta-Analysis&rdquo;.</li>
+<li>⏰ <strong>Upload Date (Version)</strong>: 2025-07-10, 1.0-0</li>
+<li>🔍 <strong>Search Range</strong>: 2024-09-01</li>
+</ul>
+<hr>
+<br>
+<span id="references-box">
+  <button
+    type="button"
+    class="btn btn-default dropdown-toggle expand-btn"
+    data-toggle="collapse"
+    href="#collapseReferences"
+    role="button"
+    aria-expanded="false"
+  >
+    Exclusions at full-text screening from the MetaCIH Depression database<span class="caret"></span>
+  </button>
+  <div class="collapse" id="collapseReferences">
+    <div class="card card-body p-3" style="max-height: 350px; overflow: scroll;">
+      <a href="/uploads/excluded-db.json"><i class="bi bi-file-earmark-arrow-down-fill"></i> Download (JSON)</a>
+      <span id="ph-references"></span>
+    </div>
+  </div>
+  <br />
+</span>
+<span id="references-box-2">
+  <button
+    type="button"
+    class="btn btn-default dropdown-toggle expand-btn"
+    data-toggle="collapse"
+    href="#collapseReferences2"
+    role="button"
+    aria-expanded="false"
+  >
+    Exclusions at full-text screening for the meta-analysis<span class="caret"></span>
+  </button>
+  <div class="collapse" id="collapseReferences2">
+    <div class="card card-body p-3" style="max-height: 350px; overflow: scroll;">
+      <a href="/uploads/excluded-db.json"><i class="bi bi-file-earmark-arrow-down-fill"></i> Download (JSON)</a>
+      <span id="ph-references-2"></span>
+    </div>
+  </div>
+  <br />
+</span>
+<br>
+<script>
+  fetch('/uploads/excluded-db.json')  // Update path if needed
+    .then(response => response.json())
+    .then(data => {
+      const list = document.createElement('ol');
+      list.style.fontSize = '10px';
+      data.forEach(entry => {
+        const li = document.createElement('li');
+        li.textContent = `${entry.study.trim()} (${entry["reason for exclusion"].trim()})`;
+        list.appendChild(li);
+      });
+      document.getElementById('ph-references').appendChild(list);
+    })
+    .catch(error => {
+      console.error('Error loading JSON:', error);
+      document.getElementById('ph-references').textContent = 'Failed to load data.';
+    });
+  fetch('/uploads/excluded-ma.json')  // Update path if needed
+    .then(response => response.json())
+    .then(data => {
+      const list = document.createElement('ol');
+      list.style.fontSize = '10px';
+      data.forEach(entry => {
+        const li = document.createElement('li');
+        li.textContent = `${entry.Study.trim()} (${entry["Reason for exclusion"].trim()})`;
+        list.appendChild(li);
+      });
+      document.getElementById('ph-references-2').appendChild(list);
+    })
+    .catch(error => {
+      console.error('Error loading JSON:', error);
+      document.getElementById('ph-references-2').textContent = 'Failed to load data.';
+    });
+</script>
+</div>
           
           <p class="post-meta border-bottom pb-3 mb-0 mt-3">
             Updated on 01 Jan 0001

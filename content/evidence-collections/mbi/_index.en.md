@@ -2,7 +2,7 @@
 keywords: []
 title: "Mindfulness-based interventions for psychiatric disorders"
 weight: 1
-url: databases/psychiatric-disorders-mbi
+url: evidence-collections/psychiatric-disorders-mbi
 ---
 {{< zenodo-authors doi="10.5281/zenodo.20316297" >}}
 
@@ -47,7 +47,7 @@ The online meta-analysis tool will be released soon.
 * Search String (Latest Version): {{< zenodo-search-string doi="10.5281/zenodo.20316297" text="↗" >}}
 * Data Repository (Latest Version): {{< zenodo-github-release doi="10.5281/zenodo.20316297" text="↗" >}}
 * {{< license >}}
-* Database DOI: {{< zenodo-badge doi="10.5281/zenodo.20316297" >}}
+* Evidence Collection DOI: {{< zenodo-badge doi="10.5281/zenodo.20316297" >}}
 
 <br>
 
@@ -67,9 +67,9 @@ The online meta-analysis tool will be released soon.
 
 <br>
 
-#### Database Flowchart
+#### Flowchart
 
-The study flow of the `psychiatric-disorders-mbi` database can be found below.
+The study flow of the `psychiatric-disorders-mbi` evidence collection can be found below.
 
 {{< zenodo-flowchart doi="10.5281/zenodo.20316297" >}}
 
@@ -98,7 +98,7 @@ The study flow of the `psychiatric-disorders-mbi` database can be found below.
 {{< zenodo-last-updated-year doi="10.5281/zenodo.20316297" >}}.
 <i>Database of mindfulness-based intervention trials for psychiatric disorders. Part of the MetaCIH project </i>
 (Version {{< zenodo-version doi="10.5281/zenodo.20316297" >}}).
-URL incandescent-fudge-873e299.netlify.app/databases/psychiatric-disorders-mbi. DOI {{< zenodo-doi doi="10.5281/zenodo.20316297" >}}.
+URL incandescent-fudge-873e299.netlify.app/evidence-collections/psychiatric-disorders-mbi. DOI {{< zenodo-doi doi="10.5281/zenodo.20316297" >}}.
 </div>
 
 <br>

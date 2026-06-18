@@ -186,7 +186,7 @@
             
             <a class="dropdown-item" href="//localhost:1313/general/">General Information</a>
             
-            <a class="dropdown-item" href="//localhost:1313/databases/">Databases</a>
+            <a class="dropdown-item" href="//localhost:1313/evidence-collections/">Evidence collections</a>
             
             <a class="dropdown-item" href="//localhost:1313/data-preparation/">Data Preparation</a>
             
@@ -200,6 +200,16 @@
         </li>
         
         
+        <li class="nav-item" id="gh-logo-container">
+          <a class="nav-link text-dark" id="gh-logo" href="https://github.com/metacih-project" target="_blank" rel="noopener noreferrer" aria-label="MetaCIH on GitHub">
+            <i class="bi-github" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item" id="mode-switch">
+          <a href="#" class="nav-link text-dark" onclick="toggleTheme(); return false;" id="mode-switch-inner" aria-label="Toggle theme">
+            <i id="theme-icon" class="bi-brightness-high" style="font-size: 140%; color: white; transition: all 0.3s ease; vertical-align: middle;"></i>
+          </a>
+        </li>
       </ul>
       
     </div>
@@ -276,13 +286,13 @@
  
  
 <li
-  data-nav-id="//localhost:1313/databases/"
-  title="Databases"
+  data-nav-id="//localhost:1313/evidence-collections/"
+  title="Evidence Collections"
   class="sidelist
   "
 >
-  <a href="//localhost:1313/databases/">
-    Databases
+  <a href="//localhost:1313/evidence-collections/">
+    Evidence Collections
   </a>
      
 </li>
@@ -359,16 +369,16 @@
 <img src="/uploads/metacih-flow.png?v=20260421" width="100%" style="border-radius: 5px; border: 3px solid white; margin-top: 30px; margin-bottom: 30px;">
 <p><strong>Components of the MetaCIH data flow:</strong></p>
 <ul>
-<li>Meta-analytic databases are maintained and regularly updated by specialized university-based research teams.</li>
-<li>Updated or newly created databases are then transformed into a consistent format (<a href="/data-preparation/format/">MetaCIH data format</a>).</li>
-<li>Each database is then pushed to its own Github repository, hosted by the <a href="https://github.com/metacih-project" title="metacih-project">metacih-project</a> account.</li>
-<li>Database repositories are then officially released using <a href="https://zenodo.org/">Zenodo</a>. At this step, a unique version number and digital object identifier (DOI) is created.</li>
-<li>The <a href="/databases/">database documentation</a> hosted on this website is automatically updated with each new release. The documentation entry contains metadata and additional information for each database.</li>
+<li>Meta-analytic evidence collections are maintained and regularly updated by specialized university-based research teams.</li>
+<li>Updated or newly created evidence collections are then transformed into a consistent format (<a href="/data-preparation/format/">MetaCIH data format</a>).</li>
+<li>Each evidence collection is then pushed to its own Github repository, hosted by the <a href="https://github.com/metacih-project" title="metacih-project">metacih-project</a> account.</li>
+<li>Repositories of evidence collections are then officially released using <a href="https://zenodo.org/">Zenodo</a>. At this step, a unique version number and digital object identifier (DOI) is created.</li>
+<li>The <a href="/evidence-collections/">documentation</a> hosted on this website is automatically updated with each new release. The documentation entry contains metadata and additional information for each evidence collection.</li>
 <li>
 <!-- The [`metapsyData` R package](https://data.metapsy.org) allows to access all MetaCIH databases directly in an R environment.  -->JSON-encoded exports can be retrieved using the [Metapsy API](https://docs.metapsy.org/r-packages/api/).
 </li>
 <li>The <a href="https://tools.metapsy.org"><code>metapsyTools</code> R package</a> provides helper functions that allow to conveniently run state-of-the-art meta-analyses using MetaCIH data, or data prepared in the same format.</li>
-<li>The released databases can also be analyzed using a user-friendly <a href="/meta-analysis-tool/">meta-analysis tool</a>. The application provides a graphical user interface that allows running meta-analyses of the data online.</li>
+<li>The released evidence collections can also be analyzed using a user-friendly <a href="/meta-analysis-tool/">meta-analysis tool</a>. The application provides a graphical user interface that allows running meta-analyses of the data online.</li>
 </ul>
 <p><br></br></p>
 </div>
@@ -395,7 +405,7 @@
  
 <footer class="section pb-4">
   
-  <script src="/costum.min.js"></script>
+  <script src="/costum.min.js?v=20260616"></script>
   <div class="container">
     <div
       class="row align-items-center"

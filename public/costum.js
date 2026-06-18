@@ -13,36 +13,6 @@ brand[0].innerHTML = `
   </span>`;
 brand[0].style.fontWeight = '500';
 
-var navbar = document.querySelectorAll('.navbar-nav,.ml-auto');
-var ul = navbar[0];
-var li = document.createElement("li");
-li.classList.add('nav-item');
-li.setAttribute('id', 'gh-logo-container');
-
-var innerLink = document.createElement('a');
-innerLink.href = "https://github.com/metapsy-project";
-innerLink.target = "_blank";
-innerLink.style = "color: white !important;";
-innerLink.classList.add('nav-link');
-innerLink.classList.add('text-dark');
-innerLink.setAttribute('id', 'gh-logo');
-innerLink.innerHTML = '<i class="bi-github"></i>';
-li.appendChild(innerLink);
-ul.appendChild(li);
-
-
-// Add mode switcher
-var switcher = document.createElement('li');
-switcher.id = "mode-switch";
-switcher.className = "nav-item";
-switcher.innerHTML = '<a href="#"' +
-    'class="nav-link text-dark"' + 
-    'onclick="toggleTheme()"' +
-    'id="mode-switch-inner">' + 
-    '<i id="theme-icon" class="bi-brightness-high" style="font-size: 140%; color: white; transition: all 0.3s ease; vertical-align: middle;"></i>' +
-    '</a>'
-navItem[0].appendChild(switcher);
-
 // remove 'updated on'
 var dateSection = document.getElementsByClassName('post-meta');
 if (dateSection.length > 0){

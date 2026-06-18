@@ -41,15 +41,15 @@ A more complete overview of the core maintenance team behind MetaCIH is provided
 
 MetaCIH is an open project. If you want to join the MetaCIH project, please contact [Nikole Giovannone](https://sites.brown.edu/mheal/team/#nikole). For example, it is possible to contribute to:
 
-* the development and update of new or existing databases included in the project;
+* the development and update of new or existing evidence collections included in the project;
 * the meta-analytic software included in the MetaCIH infrastructure (e.g., the online meta-analysis tool or the companion R packages);
 * new functionalities that can be integrated into the MetaCIH workflow. <br>
 <br>
 
-If you want to add an existing meta-analytic database to MetaCIH, we can assist you by:
+If you want to add an existing meta-analytic evidence collections to MetaCIH, we can assist you by:
 
 * harmonizing the data into a consistent format used across meta-analytic research domains;
-* storing, documenting, publishing, and versioning your database in a FAIR-complaint way
-* making your database more visible and accessible to the public via integration in our online meta-analysis tool.
+* storing, documenting, publishing, and versioning your evidence collection in a FAIR-complaint way
+* making your evidence collection more visible and accessible to the public via integration in our online meta-analysis tool.
 
 <br></br>

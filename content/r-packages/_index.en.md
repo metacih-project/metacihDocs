@@ -1,7 +1,7 @@
 ---
 title: R Packages and API
 date: 2018-12-28T11:02:05.000+06:00
-icon: fa-brands fa-r-project
+icon: ti-link
 description: Technical Documentation for the MetaCIH R Packages and API
 type: docs
 weight: "5"
@@ -14,7 +14,7 @@ weight: "5"
 
 <br>
 
-After being released, all MetaCIH databases (including all released versions) can be <!-- retrieved and -->analyzed using a designated R package, `metapsyTools`. We also provide a lightweight API, which can be used to export released databases and their metadata as [JSON](https://www.json.org/json-en.html) objects.  
+After being released, all MetaCIH evidence collections (including all released versions) can be <!-- retrieved and -->analyzed using a designated R package, `metapsyTools`. We also provide a lightweight API, which can be used to export released evidence collections and their metadata as [JSON](https://www.json.org/json-en.html) objects.  
 
 This documentation section provides further information on the R package.
 

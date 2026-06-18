@@ -25,10 +25,10 @@ Following the data preparation according to the MetaCIH data standard, all files
 
 <br>
 
-All database repositories are hosted by the [`metacih-project`](https://github.com/metacih-project) organization account. The repository name is also standardized: it is `data-`, followed by the [shorthand](/databases/#shorthand) of the database (e.g. `data-depression-psyctr`).
+All repositories are hosted by the [`metacih-project`](https://github.com/metacih-project) organization account. The repository name is also standardized: it is `data-`, followed by the [shorthand](/evidence-collections/#shorthand) of the database (e.g. `data-depression-psyctr`).
 
-In the "About" section on the Github repository page, one can find a brief description of the database, as well as a link to the specific [database documentation](/databases/) entry.
+In the "About" section on the Github repository page, one can find a brief description of the evidence collection, as well as a link to the specific [documentation](/evidence-collections/) entry.
 
-Once a repository has been created (or updated) this way, an official database [release](/release/) is published. This workflow is documented in the next section.
+Once a repository has been created (or updated) this way, an official [release](/release/) of the evidence collection is published. This workflow is documented in the next section.
 
 <br></br>
